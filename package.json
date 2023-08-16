@@ -1,0 +1,15 @@
+{
+  "name": "vang_bruno_1_repository_15-08-23",
+  "version": "1.0.0",
+  "description": "Améliorez l'interface d'un site mobile avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w ./scss/main.scss assets/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.65.1"
+  }
+}
