@@ -1,5 +1,7 @@
 .header-home {
   display: flex;
   justify-content: space-between;
-  background: $blue;
+  background: blue;
 }
+
+/*# sourceMappingURL=main.css.map */
