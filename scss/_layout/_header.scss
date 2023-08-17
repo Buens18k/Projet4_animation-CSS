@@ -4,66 +4,63 @@
   padding-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
-
-}
-.header{
+  gap: 0.03125rem;
+  .header {
     display: flex;
+    border: none;
     background-color: $background-color;
     width: 23.4375rem;
     height: 3.9375rem;
     padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-
-    box-shadow: 0px 2px 4px 0px $box-shadow;
-}
-.icon-back{
-    display: none;
-}
-.header-title{
-    display: flex;
-    width: 12.3125rem;
-    height: 2.25rem;
-    padding: 0rem 1.1875rem 0rem 1rem;
-    justify-content: center;
-    align-items: center;
-}
-.header-title .title-home{
-    color: $color-title-home;
-    text-align: center;
-    font-family: $font-family-title;
-    font-size: $font-size-title;
-    font-style: $font-style-normal;
-    font-weight: $font-weight-title;
-    line-height: $line-height-normal;
-}
-.location {
+    box-shadow: 0px 20px 4px 0px $box-shadow;
+    .icon-back {
+      display: none;
+    }
+    .header-title {
+      display: flex;
+      width: 12.3125rem;
+      height: 2.25rem;
+      padding: 0rem 1.1875rem 0rem 1rem;
+      justify-content: center;
+      align-items: center;
+      & .title-home {
+        color: $color-title-home;
+        text-align: center;
+        font-family: $font-family-title;
+        font-size: $font-size-title;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-title;
+        line-height: $line-height-normal;
+      }
+    }
+  }
+  .location {
     display: flex;
     width: 23.4375rem;
     height: 3.125rem;
     justify-content: center;
     align-items: center;
     gap: 1.0625rem;
+    background: var(--grey-2, #eaeaea);
+    .location-search {
+      display: flex;
+      gap: 1.0625rem;
+      .location-icon {
+        display: flex;
+        flex-direction: row;
+        width: 0.75rem;
+        height: 1rem;
 
-    background: var(--grey-2, #EAEAEA);
-}
-.location-search{
-    display: flex;
-    gap: 1.0625rem;
-}
-.location-icon{
-    display: flex;
-    flex-direction: row;
-    width: 0.75rem;
-    height: 1rem;
-
-    fill: var(--grey, #353535);
-}
-.search{
-    color: var(--grey, #353535);
-
-    /* Button */
-    font-family: $font-family;
-    font-size: $font-size-mini;
-    font-style: $font-style-normal;
-    font-weight: $font-weight-search;
-    line-height: $line-height-normal;
+        fill: var(--grey, #353535);
+      }
+      .search {
+        color: var(--grey, #353535);
+        font-family: $font-family;
+        font-size: $font-size-mini;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-search;
+        line-height: $line-height-normal;
+      }
+    }
+  }
 }
