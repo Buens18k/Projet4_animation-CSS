@@ -20,7 +20,6 @@ header, main {
   padding-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.03125rem;
 }
 .header-home .header {
   display: flex;
@@ -29,7 +28,8 @@ header, main {
   width: 23.4375rem;
   height: 3.9375rem;
   padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header-home .header .icon-back {
   display: none;
