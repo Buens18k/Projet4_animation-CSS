@@ -12,6 +12,7 @@ html, body {
 
 header, main {
   display: flex;
+  flex-direction: column;
 }
 
 .header-home {
@@ -87,7 +88,8 @@ header, main {
   align-items: center;
   width: 100%;
   height: auto;
-  background: #FFF;
+  background: #f6f6f6;
+  padding-bottom: 3.56rem;
 }
 
 .hero-title {
@@ -144,6 +146,61 @@ header, main {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  height: 27.5rem;
+  width: 100%;
+  gap: 1.63rem;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+  background: var(--white, #fff);
+}
+.functioning-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.63rem;
+  width: 100%;
+  height: auto;
+}
+.functioning-cta__ttle {
+  display: flex;
+  width: 17.1875rem;
+  height: 1.9375rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.functioning-cta__itm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.78rem;
+  list-style: none;
+}
+.functioning-cta__itm .itm {
+  width: 20.15538rem;
+  height: 4.52369rem;
+  border-radius: 1.25rem;
+  background: var(--background, #F6F6F6);
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.functioning-cta__itm .itm::before {
+  content: counter(list-item);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary, #9356DC);
+  border-radius: 50%;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
