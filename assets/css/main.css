@@ -15,6 +15,32 @@ header, main {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .header-home {
   width: 23.4375rem;
   height: 7.0625rem;
@@ -230,6 +256,90 @@ header, main {
   border-radius: 50%;
   color: #fff;
   width: 1.5rem;
+  height: 1.5rem;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #EAEAEA;
+  padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+}
+.restaurants-title {
+  display: flex;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.restaurants-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  height: auto;
+  width: 21.25rem;
+  gap: 1.125rem;
+}
+.restaurants-cards .restaurants-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15.6875rem;
+  border-radius: 0.9375rem;
+  background: #FFF;
+  z-index: 0;
+  margin-bottom: 0;
+  /* Shadow/Card */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.restaurants-cards .restaurants-card img {
+  display: flex;
+  width: 21.155rem;
+  height: 10.4375rem;
+  border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+  margin: 0;
+  padding: 0;
+}
+.restaurants-cards .restaurants-card .badge {
+  position: relative;
+  bottom: 150px;
+  left: 275px;
+  text-decoration: none;
+  list-style: none;
+  background-color: #99E2D0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.restaurants-cards .restaurants-card .cta-txt {
+  display: flex;
+  height: 50px;
+  padding: 0rem 0rem 0rem 0.81rem;
+  gap: 10px;
+}
+.restaurants-cards .restaurants-card .cta-txt .card__txt {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 16.6875rem;
+  height: auto;
+  margin: 0;
+  gap: 0.31rem;
+  color: #000;
+}
+.restaurants-cards .restaurants-card .cta-txt .card__txt h3 {
+  height: 1.25rem;
+}
+.restaurants-cards .restaurants-card .cta-txt .card__txt h4 {
+  width: 15.4375rem;
   height: 1.5rem;
 }
 
