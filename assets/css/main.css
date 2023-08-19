@@ -182,21 +182,51 @@ header, main {
   padding: 0;
   padding-left: 0.78rem;
   list-style: none;
+  position: relative;
 }
 .functioning-cta__itm .itm {
   width: 20.15538rem;
   height: 4.52369rem;
   border-radius: 1.25rem;
-  background: var(--background, #F6F6F6);
+  background: var(--background, #f6f6f6);
+  position: relative;
+  text-align: center;
+  padding: 1.6rem 2rem;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.functioning-cta__itm .itm .itm-logo {
+  position: relative;
+  left: -30px;
+  text-align: center;
+  height: 1.24394rem;
+}
+.functioning-cta__itm .itm .itm-logo:hover {
+  color: var(--primary, #9356DC);
+}
+.functioning-cta__itm .itm .itm-logo__menu {
+  position: relative;
+  left: -35px;
+  text-align: center;
+}
+.functioning-cta__itm .itm .itm-txt {
+  text-align: center;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .functioning-cta__itm .itm::before {
   content: counter(list-item);
   display: flex;
+  position: absolute;
+  top: 1.5rem;
+  left: -1rem;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary, #9356DC);
+  background-color: var(--primary, #9356dc);
   border-radius: 50%;
   color: #fff;
   width: 1.5rem;
