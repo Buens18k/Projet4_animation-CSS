@@ -1,9 +1,9 @@
 .functioning {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   height: 27.5rem;
   width: 100%;
-  gap: 1.63rem;
+  // gap: 1.63rem;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: var(--white, #fff);
   &-cta {
@@ -27,13 +27,14 @@
       padding: 0;
       padding-left: 0.78rem;
       list-style: none;
-      position: relative;
+      // position: relative;
       .itm {
+        position: relative;
+        // left: 10px;
         width: 20.15538rem;
         height: 4.52369rem;
         border-radius: 1.25rem;
         background: var(--background, #f6f6f6);
-        position: relative;
         text-align: center;
         padding: 1.6rem 2rem;
         /* Shadow/Instructions */
@@ -54,13 +55,19 @@
             text-align: center;
         }
         .itm-txt{
-            text-align: center;
-            color: #000;
-            font-family: Roboto;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
+          position: relative;
+          left: 5px;
+          text-align: center;
+          color: #000;
+          font-family: Roboto;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .itm__txt{
+          position: relative;
+          left: -6px;
         }
       }
       .itm::before {

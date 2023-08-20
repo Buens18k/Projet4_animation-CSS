@@ -176,10 +176,8 @@ h4 {
 
 .functioning {
   display: flex;
-  flex-direction: column;
   height: 27.5rem;
   width: 100%;
-  gap: 1.63rem;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: var(--white, #fff);
 }
@@ -208,14 +206,13 @@ h4 {
   padding: 0;
   padding-left: 0.78rem;
   list-style: none;
-  position: relative;
 }
 .functioning-cta__itm .itm {
+  position: relative;
   width: 20.15538rem;
   height: 4.52369rem;
   border-radius: 1.25rem;
   background: var(--background, #f6f6f6);
-  position: relative;
   text-align: center;
   padding: 1.6rem 2rem;
   /* Shadow/Instructions */
@@ -236,6 +233,8 @@ h4 {
   text-align: center;
 }
 .functioning-cta__itm .itm .itm-txt {
+  position: relative;
+  left: 5px;
   text-align: center;
   color: #000;
   font-family: Roboto;
@@ -243,6 +242,10 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.functioning-cta__itm .itm .itm__txt {
+  position: relative;
+  left: -6px;
 }
 .functioning-cta__itm .itm::before {
   content: counter(list-item);
@@ -307,8 +310,9 @@ h4 {
 }
 .restaurants-cards .restaurants-card .badge {
   position: relative;
+  padding: 7px;
   bottom: 150px;
-  left: 275px;
+  left: 260px;
   text-decoration: none;
   list-style: none;
   background-color: #99E2D0;
@@ -341,6 +345,55 @@ h4 {
 .restaurants-cards .restaurants-card .cta-txt .card__txt h4 {
   width: 15.4375rem;
   height: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  padding: 22px 25px;
+  gap: 16px;
+  background: var(--grey, #353535);
+}
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-logo .logo {
+  width: 8.59888rem;
+  height: 1.6875rem;
+  flex-shrink: 0;
+  filter: invert(50);
+}
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 0px;
+  justify-content: center;
+  list-style: none;
+  gap: 7px;
+}
+.footer-lists .list {
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+}
+.footer-lists .list .list__itm {
+  display: flex;
+  align-items: center;
+  width: 0.6875rem;
+  height: 0.8125rem;
+}
+.footer-lists .list .txt {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=main.css.map */
