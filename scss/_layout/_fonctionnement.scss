@@ -57,12 +57,10 @@
       }
       .itm::before {
         content: counter(list-item);
-        display: flex;
+        @include flex-center;
         position: absolute;
         top: 1.5rem;
         left: -1rem;
-        align-items: center;
-        justify-content: center;
         background-color: $color-activ;
         border-radius: 50%;
         color: $color-before;

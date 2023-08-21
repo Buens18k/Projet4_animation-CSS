@@ -249,11 +249,11 @@ h4 {
 .functioning-cta__itm .itm::before {
   content: counter(list-item);
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 1.5rem;
   left: -1rem;
-  align-items: center;
-  justify-content: center;
   background-color: var(--primary, #9356DC);
   border-radius: 50%;
   color: #fff;
