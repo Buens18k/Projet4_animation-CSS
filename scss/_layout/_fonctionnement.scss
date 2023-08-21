@@ -1,14 +1,11 @@
 .functioning {
   display: flex;
-  // flex-direction: column;
   height: 27.5rem;
   width: 100%;
-  // gap: 1.63rem;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
-  background: var(--white, #fff);
+  background: $background-card;
   &-cta {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1.63rem;
     width: 100%;
     height: auto;

@@ -178,7 +178,7 @@ h4 {
   height: 27.5rem;
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
-  background: var(--white, #fff);
+  background: #FFF;
 }
 .functioning-cta {
   display: flex;
