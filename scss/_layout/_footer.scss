@@ -1,14 +1,9 @@
 .footer{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     width: 375px;
     padding: 22px 25px;
     gap: 16px;
-    background: var(--grey, #353535);
-    // h3{
-    //     font-weight: 400;
-    //     color: aliceblue;
-    // }
+    background: $background-grey;
     &-logo {
         display: flex;
         align-items: flex-start;
@@ -16,20 +11,18 @@
             width: 8.59888rem;
             height: 1.6875rem;
             flex-shrink: 0;
-            filter: invert(50);        
+            filter: invert(50);
+            padding: 3px;        
         }
     }
     &-lists{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: flex-start;
-
         width: 100%;
         height: auto;
         margin: 0;
         padding-left: 0px;
         justify-content: center;
-        // align-items: center;
         list-style: none;
         gap: 7px;
         .list{
@@ -39,16 +32,12 @@
             .list__itm{
                 display: flex;
                 align-items: center;
-                width: 0.6875rem;
-                height: 0.8125rem;
-
+                max-width: 0.6875rem;
+                height: auto;
+                transform: scale(0.85);
             }
             .txt{
-                font-family: Roboto;
-font-size: 1rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+                @include font-list;
             }
         }
     }

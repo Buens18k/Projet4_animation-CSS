@@ -20,50 +20,38 @@
       @include title-font;
     }
     &__itm {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 1.56rem;
       margin: 0;
       padding: 0;
       padding-left: 0.78rem;
       list-style: none;
-      // position: relative;
       .itm {
-        position: relative;
-        // left: 10px;
+        @include relative-center;
         width: 20.15538rem;
         height: 4.52369rem;
         border-radius: 1.25rem;
-        background: var(--background, #f6f6f6);
-        text-align: center;
+        background: $background-white-grey;
         padding: 1.6rem 2rem;
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         .itm-logo{
-            position: relative;
-            left: -30px;
-            text-align: center;
-            // width: 0.81369rem;
-            height: 1.24394rem;
-            &:hover{
-                color: var(--primary, #9356DC);
-            }
+          @include relative-center;
+          left: -30px;
+          height: 1.24394rem;
+        }
+        .itm-logo__activ{
+          color: $color-activ;
         }
         .itm-logo__menu{
-            position: relative;
-            left: -35px;
-            text-align: center;
+          @include relative-center;
+          left: -35px;
         }
         .itm-txt{
-          position: relative;
+          @include relative-center;
           left: 5px;
-          text-align: center;
-          color: #000;
-          font-family: Roboto;
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+          color: $color-black;
+          @include font-list
         }
         .itm__txt{
           position: relative;
@@ -78,10 +66,9 @@
         left: -1rem;
         align-items: center;
         justify-content: center;
-        background-color: var(--primary, #9356dc);
+        background-color: $color-activ;
         border-radius: 50%;
-        color: #fff;
-
+        color: $color-before;
         width: 1.5rem;
         height: 1.5rem;
       }

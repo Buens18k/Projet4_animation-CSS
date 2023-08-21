@@ -1,15 +1,26 @@
 $font-family: "Roboto", sans-serif;
 $font-family-title: Shrikhand;
 
+$font-size-badge: 0.875rem;
 $font-size-mini: 1rem;
+$font-size-moyen: 1.5rem;
 $font-size-title: 1.875rem;
 
 $font-style-normal: normal;
 $font-weight-title: 400;
 $font-weight-search: 500;
-
+$font-weight-max: 700;
 $line-height-normal: normal;
 
-$background-color: white;
+$background-white: white;
+$background-white-grey: #f6f6f6;
+$background-white-resto: #EAEAEA;
+$background-grey: #353535;
+$background-card: #FFF;
+$background-badge: #99E2D0;
+
+$color-black: #000;
+$color-before: #fff;
+$color-activ: var(--primary, #9356DC);
 $box-shadow: rgba(0, 0, 0, 0.15);
 $color-title-home: black;

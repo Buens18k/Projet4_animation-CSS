@@ -1,20 +1,38 @@
-//************ Section Functioning ************
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin relative-center{
+    position: relative;
+    text-align: center;
+}
+
 @mixin title-font {
     font-family: $font-family;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
+    font-size: $font-size-moyen;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-max;
 }
-@mixin list {
-    width: 0.95456rem;
-    height: 0.90906rem;
-    color: var(--white, #FFF);
-    font-family: Roboto;
-    font-size: 0.88638rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+
+@mixin font-badge{
+    font-size: $font-size-badge;
+    font-family: $font-family;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-search;
+    line-height: $line-height-normal;
 }
-// @mixin elipse{
-    
-// }
+
+@mixin font-list{
+    font-family: $font-family;
+    font-size: $font-size-mini;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-search;
+    line-height: $line-height-normal;         
+}
