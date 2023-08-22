@@ -36,3 +36,15 @@
     font-weight: $font-weight-search;
     line-height: $line-height-normal;         
 }
+
+// ANIMATION
+
+@mixin heart-anim {
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+}

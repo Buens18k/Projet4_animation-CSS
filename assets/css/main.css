@@ -162,6 +162,7 @@ h4 {
   border: none;
   background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .hero-btn .btn {
   color: var(--white, #FFF);
@@ -343,6 +344,19 @@ h4 {
 .restaurants-cards .restaurants-card .cta-txt .card__txt h4 {
   width: 15.4375rem;
   height: 1.5rem;
+}
+.restaurants-cards .restaurants-card .cta-txt .cta-heart {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 1.375rem;
+  height: 1.3125rem;
+}
+.restaurants-cards .restaurants-card .cta-txt .cta-heart svg path {
+  transition: fill 0.3s ease;
+}
+.restaurants-cards .restaurants-card .cta-txt .cta-heart:hover svg path {
+  fill: url(#heart-gradient);
 }
 
 .footer {
