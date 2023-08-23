@@ -325,7 +325,9 @@ h4 {
 }
 .restaurants-cards .restaurants-card .cta-txt, .restaurants-cards a .cta-txt {
   display: flex;
-  height: 50px;
+  width: 100%;
+  padding-left: 0.81rem;
+  height: auto;
   gap: 10px;
 }
 .restaurants-cards .restaurants-card .cta-txt .card__txt, .restaurants-cards a .cta-txt .card__txt {

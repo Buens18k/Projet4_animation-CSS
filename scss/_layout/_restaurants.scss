@@ -49,7 +49,9 @@
       }
       .cta-txt {
         display: flex;
-        height: 50px;
+        width: 100%;
+        padding-left: 0.81rem;
+        height: auto;
         gap: 10px;
         .card__txt {
           @include flex-column;
