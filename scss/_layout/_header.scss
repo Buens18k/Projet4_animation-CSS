@@ -1,14 +1,15 @@
 .header-home {
-  width: 23.4375rem;
-  height: 7.0625rem;
+  width: 100%;
+  justify-content: center;
   padding-bottom: 0px;
   align-items: flex-start;
   .header {
     display: flex;
+    justify-content: center;
     border: none;
     background-color: $background-white;
-    width: 23.4375rem;
-    height: 3.9375rem;
+    width: 100%;
+    height: auto;
     padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
     z-index: 1;
     box-shadow: 0px 2px 4px 0px $box-shadow;
@@ -17,8 +18,8 @@
     }
     .header-title {
       @include flex-center;
-      width: 12.3125rem;
-      height: 2.25rem;
+      max-width: 197px;
+      max-height: 36px;
       padding: 0rem 1.1875rem 0rem 1rem;
 
       & .title-home {
@@ -34,20 +35,19 @@
   }
   .location {
     display: flex;
-    width: 23.4375rem;
-    height: 3.125rem;
+    width: 100%;
+    min-height: 50px;
     justify-content: center;
     align-items: center;
-    gap: 1.0625rem;
     background: var(--grey-2, #eaeaea);
     .location-search {
       display: flex;
-      gap: 1.0625rem;
+      gap: 16.992px;
       .location-icon {
         display: flex;
         flex-direction: row;
-        width: 0.75rem;
-        height: 1rem;
+        max-width: 12px;
+        height: 16px;
 
         fill: var(--grey, #353535);
       }

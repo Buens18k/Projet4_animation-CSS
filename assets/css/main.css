@@ -6,8 +6,8 @@ html, body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  height: 2252px;
-  width: 375px;
+  height: auto;
+  width: 100%;
 }
 
 header, main {
@@ -42,17 +42,18 @@ h4 {
 }
 
 .header-home {
-  width: 23.4375rem;
-  height: 7.0625rem;
+  width: 100%;
+  justify-content: center;
   padding-bottom: 0px;
   align-items: flex-start;
 }
 .header-home .header {
   display: flex;
+  justify-content: center;
   border: none;
   background-color: white;
-  width: 23.4375rem;
-  height: 3.9375rem;
+  width: 100%;
+  height: auto;
   padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
   z-index: 1;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -64,8 +65,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12.3125rem;
-  height: 2.25rem;
+  max-width: 197px;
+  max-height: 36px;
   padding: 0rem 1.1875rem 0rem 1rem;
 }
 .header-home .header .header-title .title-home {
@@ -79,22 +80,21 @@ h4 {
 }
 .header-home .location {
   display: flex;
-  width: 23.4375rem;
-  height: 3.125rem;
+  width: 100%;
+  min-height: 50px;
   justify-content: center;
   align-items: center;
-  gap: 1.0625rem;
   background: var(--grey-2, #eaeaea);
 }
 .header-home .location .location-search {
   display: flex;
-  gap: 1.0625rem;
+  gap: 16.992px;
 }
 .header-home .location .location-search .location-icon {
   display: flex;
   flex-direction: row;
-  width: 0.75rem;
-  height: 1rem;
+  max-width: 12px;
+  height: 16px;
   fill: var(--grey, #353535);
 }
 .header-home .location .location-search .search {
@@ -114,13 +114,14 @@ h4 {
   width: 100%;
   height: auto;
   background: #f6f6f6;
-  padding-bottom: 3.56rem;
+  padding-bottom: 56.96px;
 }
 
 .hero-title {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
-  width: 17.1875rem;
+  width: 100%;
   height: 4.25rem;
   margin-top: 2.44rem;
 }
@@ -138,7 +139,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19.6875rem;
+  width: 100%;
   height: 2.875rem;
 }
 .hero-txt p {
@@ -153,16 +154,23 @@ h4 {
 
 .hero-btn {
   display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 1.69rem;
 }
 .hero-btn button {
-  width: 13.625rem;
-  height: 3.125rem;
+  width: 55%;
+  max-width: 218px;
+  height: 50px;
   border-radius: 1.5625rem;
   border: none;
   background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.hero-btn button:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 .hero-btn .btn {
   color: var(--white, #FFF);
@@ -176,7 +184,7 @@ h4 {
 
 .functioning {
   display: flex;
-  height: 27.5rem;
+  height: auto;
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: #FFF;
@@ -190,7 +198,7 @@ h4 {
 }
 .functioning-cta__ttle {
   display: flex;
-  width: 17.1875rem;
+  max-width: 17.1875rem;
   height: 1.9375rem;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -206,12 +214,13 @@ h4 {
   padding: 0;
   padding-left: 0.78rem;
   list-style: none;
+  width: 100%;
 }
 .functioning-cta__itm .itm {
   position: relative;
   text-align: center;
-  width: 20.15538rem;
-  height: 4.52369rem;
+  max-width: 20.15538rem;
+  height: auto;
   border-radius: 1.25rem;
   background: #f6f6f6;
   padding: 1.6rem 2rem;
@@ -367,7 +376,7 @@ h4 {
 .footer {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
   padding: 22px 25px;
   gap: 16px;
   background: #353535;

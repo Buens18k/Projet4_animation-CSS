@@ -1,6 +1,6 @@
 .functioning {
   display: flex;
-  height: 27.5rem;
+  height: auto;
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: $background-card;
@@ -11,7 +11,7 @@
     height: auto;
     &__ttle {
       display: flex;
-      width: 17.1875rem;
+      max-width: 17.1875rem;
       height: 1.9375rem;
       margin: 0;
       @include title-font;
@@ -23,10 +23,11 @@
       padding: 0;
       padding-left: 0.78rem;
       list-style: none;
+      width: 100%;
       .itm {
         @include relative-center;
-        width: 20.15538rem;
-        height: 4.52369rem;
+        max-width: 20.15538rem;
+        height: auto;
         border-radius: 1.25rem;
         background: $background-white-grey;
         padding: 1.6rem 2rem;
