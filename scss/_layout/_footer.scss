@@ -27,14 +27,18 @@
         gap: 7px;
         .list{
             display: flex;
-            gap: 1rem;
-            color: #fff;
-            .list__itm{
+
+            a {
+                display: flex;
+                gap: 1rem;
+                color: var(--white, #FFF);
+            }
+            .list__itm {
                 display: flex;
                 align-items: center;
                 max-width: 0.6875rem;
                 height: auto;
-                transform: scale(0.85);
+                transform: scale(0.75);
             }
             .txt{
                 @include font-list;
