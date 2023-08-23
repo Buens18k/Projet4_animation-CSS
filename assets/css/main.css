@@ -381,7 +381,7 @@ h4 {
   height: 1.6875rem;
   flex-shrink: 0;
   filter: invert(50);
-  padding: 3px;
+  padding: 3px 30px 5px 0px;
 }
 .footer-lists {
   display: flex;
