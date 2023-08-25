@@ -48,3 +48,16 @@
     -moz-text-fill-color: transparent;
     font-weight: 900;
 }
+
+// MEDIA QUERIES
+
+@mixin tablet-only {
+    @media screen and (min-width:map-get($breakpoint, tablet)){
+        @content;
+    }
+}
+@mixin dekstop-only {
+    @media  screen and (min-width:map-get($breakpoint, dekstop)) {
+        @content;
+    }
+}

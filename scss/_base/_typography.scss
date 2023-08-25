@@ -1,38 +1,73 @@
-*{
-    box-sizing: border-box;   
+* {
+  box-sizing: border-box;
 }
 
-html, body {
-    font-family: $font-family;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
+html,
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
 }
-header, main{
-    display: flex;
-    flex-direction: column;
+header,
+main {
+  display: flex;
+  flex-direction: column;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-h3{
-    margin: 0;
-    padding: 0;
-    color: #000;
+p{
+    color: var(--grey, #353535);
+    text-align: center;
     font-family: Roboto;
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-h4{
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-family: Roboto;
-    font-size: 1.0625rem;
-    font-style: normal;
     font-weight: 300;
     line-height: normal;
+    padding: 0;
+    margin: 0;
+    @include tablet-only {
+        
+    }
+}
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @include tablet-only {
+    font-size: 2.2rem;
+  }
+  @include dekstop-only {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  @include title-font;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

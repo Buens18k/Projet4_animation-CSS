@@ -1,21 +1,25 @@
 .footer{
     @include flex-column;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     padding: 22px 25px;
     gap: 16px;
     background: $background-grey;
     &-logo {
         display: flex;
-        align-items: flex-start;
+        width: 100%;
+        // align-items: flex-start;
+        // padding-right: 50px;
         .logo{
-            width: 8.59888rem;
-            height: 1.6875rem;
+            max-width: 8.59888rem;
+            max-height: 1.6875rem;
             flex-shrink: 0;
             filter: invert(50);
             padding: 3px 30px 5px 0px;        
         }
     }
-    &-lists{
+    &-list{
         @include flex-column;
         align-items: flex-start;
         width: 100%;
