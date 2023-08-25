@@ -2,21 +2,61 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  height: 2252px;
-  width: 375px;
+  height: auto;
+  width: 100%;
 }
 
-header, main {
+header,
+main {
   display: flex;
   flex-direction: column;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  color: var(--grey, #353535);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
 }
 
 h3 {
@@ -42,20 +82,33 @@ h4 {
 }
 
 .header-home {
-  width: 23.4375rem;
-  height: 7.0625rem;
+  width: 100%;
+  justify-content: center;
   padding-bottom: 0px;
   align-items: flex-start;
 }
 .header-home .header {
   display: flex;
+  justify-content: center;
   border: none;
   background-color: white;
-  width: 23.4375rem;
-  height: 3.9375rem;
-  padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+  width: 100%;
+  height: auto;
+  padding: 14px 89px 13px 89px;
   z-index: 1;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .header-home .header {
+    height: 45px;
+    padding: 30px 0px 31.798px 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-home .header {
+    height: 90px;
+    padding: 30px 0px 31.798px 0px;
+  }
 }
 .header-home .header .icon-back {
   display: none;
@@ -64,8 +117,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12.3125rem;
-  height: 2.25rem;
+  max-width: 197px;
+  max-height: 36px;
   padding: 0rem 1.1875rem 0rem 1rem;
 }
 .header-home .header .header-title .title-home {
@@ -79,22 +132,21 @@ h4 {
 }
 .header-home .location {
   display: flex;
-  width: 23.4375rem;
-  height: 3.125rem;
+  width: 100%;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  gap: 1.0625rem;
   background: var(--grey-2, #eaeaea);
 }
 .header-home .location .location-search {
   display: flex;
-  gap: 1.0625rem;
+  gap: 17px;
 }
 .header-home .location .location-search .location-icon {
   display: flex;
   flex-direction: row;
-  width: 0.75rem;
-  height: 1rem;
+  max-width: 12px;
+  height: 16px;
   fill: var(--grey, #353535);
 }
 .header-home .location .location-search .search {
@@ -114,55 +166,79 @@ h4 {
   width: 100%;
   height: auto;
   background: #f6f6f6;
-  padding-bottom: 3.56rem;
+  padding-bottom: 56.96px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    gap: 0.5rem;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    gap: 1.13rem;
+    padding-bottom: 30.08px;
+  }
 }
 
 .hero-title {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
-  width: 17.1875rem;
+  width: 100%;
   height: 4.25rem;
   margin-top: 2.44rem;
 }
-.hero-title h1 {
-  color: #000;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-top: 2rem;
+    align-items: center;
+    height: 2.9735rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    margin-top: 1.87rem;
+  }
 }
 
 .hero-txt {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19.6875rem;
+  width: 100%;
   height: 2.875rem;
 }
-.hero-txt p {
-  color: var(--grey, #353535);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+@media screen and (min-width: 768px) {
+  .hero-txt {
+    width: 68.29%;
+  }
 }
 
 .hero-btn {
   display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 1.69rem;
 }
+@media screen and (min-width: 768px) {
+  .hero-btn {
+    margin-top: 0.5rem;
+  }
+}
 .hero-btn button {
-  width: 13.625rem;
-  height: 3.125rem;
+  width: 55%;
+  max-width: 218px;
+  height: 50px;
   border-radius: 1.5625rem;
   border: none;
   background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.hero-btn button:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 .hero-btn .btn {
   color: var(--white, #FFF);
@@ -176,42 +252,64 @@ h4 {
 
 .functioning {
   display: flex;
-  height: 27.5rem;
+  height: auto;
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: #FFF;
 }
+@media screen and (min-width: 1440px) {
+  .functioning {
+    padding: 3.125rem 11.25rem;
+    justify-content: flex-start;
+  }
+}
 .functioning-cta {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.63rem;
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 1440px) {
+  .functioning-cta {
+    gap: 1.56rem;
+  }
+}
 .functioning-cta__ttle {
   display: flex;
-  width: 17.1875rem;
-  height: 1.9375rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
+  padding-right: 162px;
 }
 .functioning-cta__itm {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.56rem;
   margin: 0;
   padding: 0;
   padding-left: 0.78rem;
   list-style: none;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .functioning-cta__itm {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.28rem;
+  }
 }
 .functioning-cta__itm .itm {
   position: relative;
   text-align: center;
-  width: 20.15538rem;
-  height: 4.52369rem;
+  width: 100%;
+  max-width: 20.15538rem;
+  height: auto;
   border-radius: 1.25rem;
   background: #f6f6f6;
   padding: 1.6rem 2rem;
@@ -266,19 +364,15 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background: #EAEAEA;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 }
 .restaurants-title {
   display: flex;
-  padding-bottom: 1.5rem;
+  padding: 0rem 13rem 1.5rem 0rem;
   margin: 0;
   color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
 }
 .restaurants-cards {
   display: grid;
@@ -287,7 +381,8 @@ h4 {
   width: 21.25rem;
   gap: 1.125rem;
 }
-.restaurants-cards .restaurants-card, .restaurants-cards a {
+.restaurants-cards .restaurants-card,
+.restaurants-cards a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,7 +395,8 @@ h4 {
   /* Shadow/Card */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.restaurants-cards .restaurants-card img, .restaurants-cards a img {
+.restaurants-cards .restaurants-card img,
+.restaurants-cards a img {
   display: flex;
   width: 100%;
   height: 10.4375rem;
@@ -308,7 +404,8 @@ h4 {
   margin: 0;
   padding: 0;
 }
-.restaurants-cards .restaurants-card .badge, .restaurants-cards a .badge {
+.restaurants-cards .restaurants-card .badge,
+.restaurants-cards a .badge {
   position: relative;
   text-align: center;
   padding: 7px;
@@ -323,14 +420,15 @@ h4 {
   font-weight: 500;
   line-height: normal;
 }
-.restaurants-cards .restaurants-card .cta-txt, .restaurants-cards a .cta-txt {
+.restaurants-cards .restaurants-card .cta-txt,
+.restaurants-cards a .cta-txt {
   display: flex;
   width: 100%;
-  padding-left: 0.81rem;
+  padding-left: 13px;
   height: auto;
-  gap: 10px;
 }
-.restaurants-cards .restaurants-card .cta-txt .card__txt, .restaurants-cards a .cta-txt .card__txt {
+.restaurants-cards .restaurants-card .cta-txt .card__txt,
+.restaurants-cards a .cta-txt .card__txt {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -340,50 +438,50 @@ h4 {
   gap: 0.31rem;
   color: #000;
 }
-.restaurants-cards .restaurants-card .cta-txt .card__txt h3, .restaurants-cards a .cta-txt .card__txt h3 {
+.restaurants-cards .restaurants-card .cta-txt .card__txt h3,
+.restaurants-cards a .cta-txt .card__txt h3 {
   height: 1.25rem;
 }
-.restaurants-cards .restaurants-card .cta-txt .card__txt h4, .restaurants-cards a .cta-txt .card__txt h4 {
+.restaurants-cards .restaurants-card .cta-txt .card__txt h4,
+.restaurants-cards a .cta-txt .card__txt h4 {
   width: 15.4375rem;
   height: 1.5rem;
 }
-.restaurants-cards .restaurants-card .cta-txt .cta-heart, .restaurants-cards a .cta-txt .cta-heart {
-  display: inline-block;
+.restaurants-cards .restaurants-card .cta-txt .btn-heart,
+.restaurants-cards a .cta-txt .btn-heart {
   position: relative;
-  cursor: pointer;
-  width: 1.375rem;
-  height: 1.3125rem;
 }
-.restaurants-cards .restaurants-card .cta-txt .cta-heart svg path, .restaurants-cards a .cta-txt .cta-heart svg path {
-  transition: fill 0.3s ease;
-}
-.restaurants-cards .restaurants-card .cta-txt .cta-heart:hover svg path, .restaurants-cards a .cta-txt .cta-heart:hover svg path {
+.restaurants-cards .restaurants-card .cta-txt .btn-heart:hover svg,
+.restaurants-cards a .cta-txt .btn-heart:hover svg {
   fill: url(#heart-gradient);
 }
-.restaurants-cards .restaurants-card .cta_gap, .restaurants-cards a .cta_gap {
+.restaurants-cards .restaurants-card .cta_gap,
+.restaurants-cards a .cta_gap {
   padding-top: 1rem;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
   padding: 22px 25px;
   gap: 16px;
   background: #353535;
 }
 .footer-logo {
   display: flex;
-  align-items: flex-start;
+  width: 100%;
 }
 .footer-logo .logo {
-  width: 8.59888rem;
-  height: 1.6875rem;
+  max-width: 8.59888rem;
+  max-height: 1.6875rem;
   flex-shrink: 0;
   filter: invert(50);
   padding: 3px 30px 5px 0px;
 }
-.footer-lists {
+.footer-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -395,22 +493,22 @@ h4 {
   list-style: none;
   gap: 7px;
 }
-.footer-lists .list {
+.footer-list .list {
   display: flex;
 }
-.footer-lists .list a {
+.footer-list .list a {
   display: flex;
   gap: 1rem;
   color: var(--white, #FFF);
 }
-.footer-lists .list .list__itm {
+.footer-list .list .list__itm {
   display: flex;
   align-items: center;
   max-width: 0.6875rem;
   height: auto;
   transform: scale(0.75);
 }
-.footer-lists .list .txt {
+.footer-list .list .txt {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;

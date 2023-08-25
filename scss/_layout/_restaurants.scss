@@ -1,16 +1,15 @@
 .restaurants {
   @include flex-column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background: $background-white-resto;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 
   &-title {
     display: flex;
-    padding-bottom: 1.5rem;
+    padding: 0rem 13rem 1.5rem 0rem;
     margin: 0;
     color: $color-black;
-    @include title-font;
   }
   &-cards {
     display: grid;
@@ -18,7 +17,8 @@
     height: auto;
     width: 21.25rem;
     gap: 1.125rem;
-    .restaurants-card, a {
+    .restaurants-card,
+    a {
       @include flex-column;
       align-items: center;
       width: 100%;
@@ -50,9 +50,8 @@
       .cta-txt {
         display: flex;
         width: 100%;
-        padding-left: 0.81rem;
+        padding-left: 13px;
         height: auto;
-        gap: 10px;
         .card__txt {
           @include flex-column;
           text-decoration: none;
@@ -69,23 +68,14 @@
             height: 1.5rem;
           }
         }
-        .cta-heart {
-            display: inline-block;
-            position: relative;
-            cursor: pointer;
-
-            width: 1.375rem;
-            height: 1.3125rem;
-            & svg path {
-                transition: fill 0.3s ease;
-            }
-        }
-        .cta-heart:hover svg path{
+        .btn-heart {
+          position: relative;
+          &:hover svg{
             fill: url(#heart-gradient);
+          }
         }
-
       }
-      .cta_gap{
+      .cta_gap {
         padding-top: 1rem;
       }
     }
