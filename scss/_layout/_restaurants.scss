@@ -5,18 +5,36 @@
   background: $background-white-resto;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 
+  @include dekstop-only {
+    padding: 1.88rem 11.25rem;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+
   &-title {
     display: flex;
     padding: 0rem 13rem 1.5rem 0rem;
     margin: 0;
     color: $color-black;
+
+    @include dekstop-only {
+      // align-items: flex-start;
+      padding: 0;
+    }
   }
+
   &-cards {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     height: auto;
     width: 21.25rem;
     gap: 1.125rem;
+
+    @include dekstop-only {
+      grid-template-columns: repeat(2,100%);
+      width: 530px;
+    }
+
     .restaurants-card,
     a {
       @include flex-column;
@@ -29,6 +47,7 @@
       margin-bottom: 0;
       /* Shadow/Card */
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+      
       & img {
         display: flex;
         width: 100%;
@@ -37,6 +56,7 @@
         margin: 0;
         padding: 0;
       }
+      
       .badge {
         @include relative-center;
         padding: 7px;
@@ -47,11 +67,13 @@
         background-color: $background-badge;
         @include font-badge;
       }
+      
       .cta-txt {
         display: flex;
         width: 100%;
         padding-left: 13px;
         height: auto;
+        
         .card__txt {
           @include flex-column;
           text-decoration: none;
@@ -60,21 +82,26 @@
           margin: 0;
           gap: 0.31rem;
           color: $color-black;
+          
           h3 {
             height: 1.25rem;
           }
+          
           h4 {
             width: 15.4375rem;
             height: 1.5rem;
           }
         }
+        
         .btn-heart {
           position: relative;
+          
           &:hover svg{
             fill: url(#heart-gradient);
           }
         }
       }
+      
       .cta_gap {
         padding-top: 1rem;
       }

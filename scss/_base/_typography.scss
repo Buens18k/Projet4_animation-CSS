@@ -9,6 +9,17 @@ body {
   padding: 0;
   height: auto;
   width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include tablet-only {
+    max-width: 768px;
+  }
+
+  @include dekstop-only {
+    max-width: 1440px;
+    height: auto;
+  }
 }
 header,
 main {
