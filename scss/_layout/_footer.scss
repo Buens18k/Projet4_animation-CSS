@@ -1,52 +1,91 @@
-.footer{
-    @include flex-column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding: 22px 25px;
-    gap: 16px;
-    background: $background-grey;
-    &-logo {
-        display: flex;
-        width: 100%;
-        // align-items: flex-start;
-        // padding-right: 50px;
-        .logo{
-            max-width: 8.59888rem;
-            max-height: 1.6875rem;
-            flex-shrink: 0;
-            filter: invert(50);
-            padding: 3px 30px 5px 0px;        
-        }
-    }
-    &-list{
-        @include flex-column;
-        align-items: flex-start;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-left: 0px;
-        justify-content: center;
-        list-style: none;
-        gap: 7px;
-        .list{
-            display: flex;
+.footer {
+  @include flex-column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 22px 25px;
+  gap: 16px;
+  background: $background-grey;
 
-            a {
-                display: flex;
-                gap: 1rem;
-                color: var(--white, #FFF);
-            }
-            .list__itm {
-                display: flex;
-                align-items: center;
-                max-width: 0.6875rem;
-                height: auto;
-                transform: scale(0.75);
-            }
-            .txt{
-                @include font-list;
-            }
-        }
+  @include dekstop-only {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    // max-width: 90rem;
+    height: 7.125rem;
+    padding: 1.875rem 1.5625rem;
+    gap: 1rem;
+  }
+  &-cta {
+    display: flex;
+    flex-direction: column;
+
+    @include dekstop-only {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      gap: 4rem;
     }
+
+    &__logo {
+      display: flex;
+
+      @include dekstop-only {
+        align-items: flex-end;
+      }
+      .logo {
+        max-width: 8.59888rem;
+        max-height: 1.6875rem;
+        flex-shrink: 0;
+        filter: invert(50);
+        padding: 3px 30px 5px 0px;
+
+        @include dekstop-only {
+            padding-top: 0px;            
+        }
+      }
+    }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+
+      &-lists {
+        @include flex-column;
+
+        list-style: none;
+        align-items: flex-start;
+        padding: 0;
+        gap: 0.44rem;
+
+        @include dekstop-only {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin: 0;
+          gap: 2.44rem;
+        }
+
+        a {
+          display: flex;
+          gap: 1rem;
+          color: var(--white, #fff);
+
+          @include dekstop-only {
+            gap: 0.5rem;
+          }
+        }
+
+        .list__itm {
+          display: flex;
+          align-items: center;
+          max-width: 0.6875rem;
+          height: auto;
+          transform: scale(0.75);
+        }
+
+        .txt {
+          @include font-list;
+        }
+      }
+    }
+  }
 }
