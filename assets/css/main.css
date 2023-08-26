@@ -411,7 +411,8 @@ h4 {
 @media screen and (min-width: 1440px) {
   .restaurants-cards {
     grid-template-columns: repeat(2, 100%);
-    width: 530px;
+    grid-gap: 3.12rem 6.25rem;
+    width: 500px;
   }
 }
 .restaurants-cards .restaurants-card,
@@ -453,12 +454,25 @@ h4 {
   font-weight: 500;
   line-height: normal;
 }
+@media screen and (min-width: 1440px) {
+  .restaurants-cards .restaurants-card .badge,
+  .restaurants-cards a .badge {
+    left: 210px;
+  }
+}
 .restaurants-cards .restaurants-card .cta-txt,
 .restaurants-cards a .cta-txt {
   display: flex;
   width: 100%;
   padding-left: 13px;
   height: auto;
+}
+@media screen and (min-width: 1440px) {
+  .restaurants-cards .restaurants-card .cta-txt,
+  .restaurants-cards a .cta-txt {
+    justify-content: space-between;
+    padding-right: 25px;
+  }
 }
 .restaurants-cards .restaurants-card .cta-txt .card__txt,
 .restaurants-cards a .cta-txt .card__txt {
