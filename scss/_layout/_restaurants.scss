@@ -16,6 +16,7 @@
     padding: 0rem 13rem 1.5rem 0rem;
     margin: 0;
     color: $color-black;
+    width: 100%;
 
     @include dekstop-only {
       padding: 0;
@@ -28,10 +29,15 @@
     height: auto;
     gap: 1.125rem;
 
+    @include tablet-only {
+      grid-template-columns: repeat(2,50%);
+      width: 95%;
+    }
+
     @include dekstop-only {
       grid-template-columns: repeat(2,100%);
       grid-gap: 3.12rem 6.25rem;
-      width: 500px;
+      width: 46%;
     }
 
     .restaurants-card,
@@ -54,20 +60,28 @@
         border-radius: 0.9375rem 0.9375rem 0rem 0rem;
         margin: 0;
         padding: 0;
+        object-fit: cover;
       }
       
       .badge {
         @include relative-center;
         padding: 7px;
         bottom: 150px;
-        left: 130px;
+        left: 37%;
         text-decoration: none;
         list-style: none;
         background-color: $background-badge;
+        border-radius: 3px;
         @include font-badge;
 
+        @include tablet-only {
+          left: 37%;
+        }
+          
+        
+
         @include dekstop-only {
-          left: 210px;
+          left: 40%;
         }
       }
       
@@ -76,6 +90,11 @@
         width: 100%;
         padding-left: 13px;
         height: auto;
+
+        @include tablet-only {
+          justify-content: space-between;
+          padding-right: 25px;
+        }
 
         @include dekstop-only {
           justify-content: space-between;
@@ -107,10 +126,6 @@
           &:hover svg{
             fill: url(#heart-gradient);
           }
-
-          // @include dekstop-only {
-          //   right: 5%;
-          // }
         }
       }
       

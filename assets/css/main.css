@@ -9,8 +9,9 @@ body {
   padding: 0;
   height: auto;
   width: 100%;
-  min-width: 320px;
   margin: 0 auto;
+  min-width: 320px;
+  max-width: 767px;
 }
 @media screen and (min-width: 1440px) {
   html,
@@ -306,6 +307,11 @@ h4 {
   list-style: none;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .functioning-cta__itm {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 1440px) {
   .functioning-cta__itm {
     flex-direction: row;
@@ -328,7 +334,7 @@ h4 {
 .functioning-cta__itm .itm .itm-logo {
   position: relative;
   text-align: center;
-  left: -30px;
+  left: -12%;
   height: 1.24394rem;
 }
 .functioning-cta__itm .itm .itm-logo__activ {
@@ -337,12 +343,12 @@ h4 {
 .functioning-cta__itm .itm .itm-logo__menu {
   position: relative;
   text-align: center;
-  left: -35px;
+  left: -14%;
 }
 .functioning-cta__itm .itm .itm-txt {
   position: relative;
   text-align: center;
-  left: 5px;
+  left: -5%;
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -389,6 +395,7 @@ h4 {
   padding: 0rem 13rem 1.5rem 0rem;
   margin: 0;
   color: #000;
+  width: 100%;
 }
 @media screen and (min-width: 1440px) {
   .restaurants-title {
@@ -401,11 +408,17 @@ h4 {
   height: auto;
   gap: 1.125rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurants-cards {
+    grid-template-columns: repeat(2, 50%);
+    width: 95%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .restaurants-cards {
     grid-template-columns: repeat(2, 100%);
     grid-gap: 3.12rem 6.25rem;
-    width: 500px;
+    width: 46%;
   }
 }
 .restaurants-cards .restaurants-card,
@@ -430,6 +443,7 @@ h4 {
   border-radius: 0.9375rem 0.9375rem 0rem 0rem;
   margin: 0;
   padding: 0;
+  object-fit: cover;
 }
 .restaurants-cards .restaurants-card .badge,
 .restaurants-cards a .badge {
@@ -437,20 +451,27 @@ h4 {
   text-align: center;
   padding: 7px;
   bottom: 150px;
-  left: 130px;
+  left: 37%;
   text-decoration: none;
   list-style: none;
   background-color: #99E2D0;
+  border-radius: 3px;
   font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
+@media screen and (min-width: 768px) {
+  .restaurants-cards .restaurants-card .badge,
+  .restaurants-cards a .badge {
+    left: 37%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .restaurants-cards .restaurants-card .badge,
   .restaurants-cards a .badge {
-    left: 210px;
+    left: 40%;
   }
 }
 .restaurants-cards .restaurants-card .cta-txt,
@@ -459,6 +480,13 @@ h4 {
   width: 100%;
   padding-left: 13px;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .restaurants-cards .restaurants-card .cta-txt,
+  .restaurants-cards a .cta-txt {
+    justify-content: space-between;
+    padding-right: 25px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .restaurants-cards .restaurants-card .cta-txt,

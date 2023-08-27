@@ -36,6 +36,11 @@
       padding-left: 0.78rem;
       list-style: none;
       width: 100%;
+
+      @include tablet-only {
+        flex-direction: row;
+      }
+
       @include dekstop-only {
         flex-direction: row;
         align-items: center;
@@ -53,7 +58,7 @@
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         .itm-logo{
           @include relative-center;
-          left: -30px;
+          left: -12%;
           height: 1.24394rem;
         }
         .itm-logo__activ{
@@ -61,11 +66,11 @@
         }
         .itm-logo__menu{
           @include relative-center;
-          left: -35px;
+          left: -14%;
         }
         .itm-txt{
           @include relative-center;
-          left: 5px;
+          left: -5%;
           color: $color-black;
           @include font-list
         }
