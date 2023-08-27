@@ -9,14 +9,8 @@ body {
   padding: 0;
   height: auto;
   width: 100%;
-  max-width: 375px;
+  min-width: 320px;
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  html,
-  body {
-    max-width: 768px;
-  }
 }
 @media screen and (min-width: 1440px) {
   html,
@@ -405,7 +399,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(1, 100%);
   height: auto;
-  width: 21.25rem;
   gap: 1.125rem;
 }
 @media screen and (min-width: 1440px) {

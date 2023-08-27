@@ -18,7 +18,6 @@
     color: $color-black;
 
     @include dekstop-only {
-      // align-items: flex-start;
       padding: 0;
     }
   }
@@ -27,7 +26,6 @@
     display: grid;
     grid-template-columns: repeat(1, 100%);
     height: auto;
-    width: 21.25rem;
     gap: 1.125rem;
 
     @include dekstop-only {
