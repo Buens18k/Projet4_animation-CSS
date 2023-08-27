@@ -79,29 +79,34 @@
       .cta-badge {
         @include relative-center;
         left: 38%;
-      }
-      
-      .badge {
-        @include relative-center;
-        padding: 7px;
-        bottom: 150px;
-        // left: 37%;
-        text-decoration: none;
-        list-style: none;
-        background-color: $background-badge;
-        border-radius: 3px;
-        @include font-badge;
 
         @include tablet-only {
-          left: 37%;
+          left: 35%;
         }
-          
-        
 
-        @include dekstop-only {
-          left: 40%;
+        .badge {
+          @include relative-center;
+          padding: 7px;
+          bottom: 150px;
+          // left: 37%;
+          text-decoration: none;
+          list-style: none;
+          background-color: $background-badge;
+          border-radius: 3px;
+          @include font-badge;
+  
+          @include tablet-only {
+            left: 1px;
+          }
+  
+          @include dekstop-only {
+            left: 40%;
+          }
         }
+
       }
+      
+      
       
       .cta-txt {
         display: flex;

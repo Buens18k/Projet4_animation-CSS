@@ -460,8 +460,14 @@ h4 {
   text-align: center;
   left: 38%;
 }
-.restaurants-cards .restaurants-card .badge,
-.restaurants-cards a .badge {
+@media screen and (min-width: 768px) {
+  .restaurants-cards .restaurants-card .cta-badge,
+  .restaurants-cards a .cta-badge {
+    left: 35%;
+  }
+}
+.restaurants-cards .restaurants-card .cta-badge .badge,
+.restaurants-cards a .cta-badge .badge {
   position: relative;
   text-align: center;
   padding: 7px;
@@ -477,14 +483,14 @@ h4 {
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
-  .restaurants-cards .restaurants-card .badge,
-  .restaurants-cards a .badge {
-    left: 37%;
+  .restaurants-cards .restaurants-card .cta-badge .badge,
+  .restaurants-cards a .cta-badge .badge {
+    left: 1px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .restaurants-cards .restaurants-card .badge,
-  .restaurants-cards a .badge {
+  .restaurants-cards .restaurants-card .cta-badge .badge,
+  .restaurants-cards a .cta-badge .badge {
     left: 40%;
   }
 }
