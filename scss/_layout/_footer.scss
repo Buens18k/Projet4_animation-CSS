@@ -7,11 +7,19 @@
   gap: 16px;
   background: $background-grey;
 
+  @include tablet-only {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 7.125rem;
+    padding: 1.5rem 1.5625rem;
+    gap: 1rem;
+  }
+
   @include dekstop-only {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    // max-width: 90rem;
     height: 7.125rem;
     padding: 1.875rem 1.5625rem;
     gap: 1rem;
@@ -19,6 +27,12 @@
   &-cta {
     display: flex;
     flex-direction: column;
+
+    @include tablet-only {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      gap: 4rem;
+    }
 
     @include dekstop-only {
       justify-content: space-between;
@@ -28,6 +42,10 @@
 
     &__logo {
       display: flex;
+
+      @include tablet-only {
+        align-items: flex-end;
+      }
 
       @include dekstop-only {
         align-items: flex-end;
@@ -39,8 +57,12 @@
         filter: invert(50);
         padding: 3px 30px 5px 0px;
 
+        @include tablet-only {
+          padding-top: 0px;            
+        }
+
         @include dekstop-only {
-            padding-top: 0px;            
+          padding-top: 0px;            
         }
       }
     }
@@ -55,6 +77,14 @@
         align-items: flex-start;
         padding: 0;
         gap: 0.44rem;
+
+        @include tablet-only {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin: 0;
+          gap: 2.44rem;
+        }
 
         @include dekstop-only {
           flex-direction: row;

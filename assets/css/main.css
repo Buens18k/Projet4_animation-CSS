@@ -552,6 +552,16 @@ h4 {
   gap: 16px;
   background: #353535;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 7.125rem;
+    padding: 1.5rem 1.5625rem;
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .footer {
     display: flex;
@@ -566,6 +576,13 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer-cta {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .footer-cta {
     justify-content: space-between;
@@ -575,6 +592,11 @@ h4 {
 }
 .footer-cta__logo {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .footer-cta__logo {
+    align-items: flex-end;
+  }
 }
 @media screen and (min-width: 1440px) {
   .footer-cta__logo {
@@ -587,6 +609,11 @@ h4 {
   flex-shrink: 0;
   filter: invert(50);
   padding: 3px 30px 5px 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer-cta__logo .logo {
+    padding-top: 0px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .footer-cta__logo .logo {
@@ -604,6 +631,15 @@ h4 {
   align-items: flex-start;
   padding: 0;
   gap: 0.44rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-cta__nav-lists {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    gap: 2.44rem;
+  }
 }
 @media screen and (min-width: 1440px) {
   .footer-cta__nav-lists {
