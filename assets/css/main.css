@@ -10,15 +10,6 @@ body {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 767px;
-}
-@media screen and (min-width: 1440px) {
-  html,
-  body {
-    max-width: 1440px;
-    height: auto;
-  }
 }
 
 header,
@@ -176,7 +167,7 @@ h4 {
   width: 100%;
   height: auto;
   background: #f6f6f6;
-  padding-bottom: 56.96px;
+  padding: 0 0 3.44rem 0;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -196,8 +187,7 @@ h4 {
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  height: 4.25rem;
-  margin-top: 2.44rem;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -267,6 +257,11 @@ h4 {
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: #FFF;
 }
+@media screen and (min-width: 768px) {
+  .functioning {
+    padding: 2rem 11rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .functioning {
     padding: 3.125rem 11.25rem;
@@ -289,12 +284,18 @@ h4 {
 }
 .functioning-cta__ttle {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   margin: 0;
   padding-right: 162px;
+}
+@media screen and (min-width: 768px) {
+  .functioning-cta__ttle {
+    justify-content: flex-start;
+  }
 }
 .functioning-cta__itm {
   display: flex;
@@ -307,11 +308,6 @@ h4 {
   list-style: none;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .functioning-cta__itm {
-    flex-direction: row;
-  }
-}
 @media screen and (min-width: 1440px) {
   .functioning-cta__itm {
     flex-direction: row;
@@ -323,7 +319,6 @@ h4 {
   position: relative;
   text-align: center;
   width: 100%;
-  max-width: 20.15538rem;
   height: auto;
   border-radius: 1.25rem;
   background: #f6f6f6;
@@ -383,6 +378,13 @@ h4 {
   background: #EAEAEA;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurants {
+    padding: 1.88rem 11.25rem;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .restaurants {
     padding: 1.88rem 11.25rem;
@@ -397,6 +399,11 @@ h4 {
   color: #000;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .restaurants-title {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 1440px) {
   .restaurants-title {
     padding: 0;
@@ -405,12 +412,14 @@ h4 {
 .restaurants-cards {
   display: grid;
   grid-template-columns: repeat(1, 100%);
+  width: 100%;
   height: auto;
   gap: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .restaurants-cards {
     grid-template-columns: repeat(2, 50%);
+    grid-gap: 2rem 3rem;
     width: 95%;
   }
 }
@@ -445,13 +454,18 @@ h4 {
   padding: 0;
   object-fit: cover;
 }
+.restaurants-cards .restaurants-card .cta-badge,
+.restaurants-cards a .cta-badge {
+  position: relative;
+  text-align: center;
+  left: 38%;
+}
 .restaurants-cards .restaurants-card .badge,
 .restaurants-cards a .badge {
   position: relative;
   text-align: center;
   padding: 7px;
   bottom: 150px;
-  left: 37%;
   text-decoration: none;
   list-style: none;
   background-color: #99E2D0;
@@ -478,7 +492,7 @@ h4 {
 .restaurants-cards a .cta-txt {
   display: flex;
   width: 100%;
-  padding-left: 13px;
+  padding: 0 10px 0 13px;
   height: auto;
 }
 @media screen and (min-width: 768px) {
@@ -500,7 +514,7 @@ h4 {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  width: 16.6875rem;
+  width: 100%;
   height: auto;
   margin: 0;
   gap: 0.31rem;

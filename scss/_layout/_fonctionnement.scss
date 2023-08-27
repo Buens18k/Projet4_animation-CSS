@@ -4,6 +4,11 @@
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: $background-card;
+
+  @include tablet-only {
+    padding: 2rem 11rem;
+  }
+
   @include dekstop-only {
     padding: 3.125rem 11.25rem;
     justify-content: flex-start
@@ -20,12 +25,18 @@
     }
     &__ttle {
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       width: 100%;
       height: auto;
       margin: 0;
       padding-right: 162px;
+
+      @include tablet-only {
+        justify-content: flex-start;
+      }
+
     }
     &__itm {
       @include flex-column;
@@ -37,9 +48,9 @@
       list-style: none;
       width: 100%;
 
-      @include tablet-only {
-        flex-direction: row;
-      }
+      // @include tablet-only {
+      //   flex-direction: row;
+      // }
 
       @include dekstop-only {
         flex-direction: row;
@@ -49,7 +60,7 @@
       .itm {
         @include relative-center;
         width: 100%;
-        max-width: 20.15538rem;
+        // max-width: 20.15538rem;
         height: auto;
         border-radius: 1.25rem;
         background: $background-white-grey;

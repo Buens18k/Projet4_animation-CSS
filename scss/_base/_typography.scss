@@ -10,19 +10,6 @@ body {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 767px;
-  // @include tablet-only {
-  //   max-width: 1007px;
-  // }
-  // @include tablet-only {
-  //   max-width: 1024px;
-  // }
-
-  @include dekstop-only {
-    max-width: 1440px;
-    height: auto;
-  }
 }
 
 header,
