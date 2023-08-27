@@ -4,7 +4,6 @@
   "description": "Améliorez l'interface d'un site mobile avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass -w ./scss/main.scss assets/css/main.css",
     "build": "sass ./scss/main.scss assets/css/main.css"
   },
