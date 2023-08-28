@@ -122,7 +122,7 @@ h4 {
   max-height: 36px;
   padding: 0rem 1.1875rem 0rem 1rem;
 }
-.header-home__header__title--txt--color {
+.header-home__header__title--black span {
   color: black;
   text-align: center;
   font-family: Shrikhand;
@@ -143,12 +143,12 @@ h4 {
   display: flex;
   gap: 17px;
 }
-.header-home__location__search--icon-color {
+.header-home__location__search--grey i {
   max-width: 12px;
   height: 16px;
   fill: var(--grey, #353535);
 }
-.header-home__location__search--search-txt {
+.header-home__location__search--grey span {
   color: var(--grey, #353535);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;

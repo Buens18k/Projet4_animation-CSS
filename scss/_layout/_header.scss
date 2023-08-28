@@ -34,16 +34,16 @@
       max-width: 197px;
       max-height: 36px;
       padding: 0rem 1.1875rem 0rem 1rem;
+    }
 
-      &--txt--color {
-        color: $color-title-home;
-        text-align: center;
-        font-family: $font-family-title;
-        font-size: $font-size-title;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-title;
-        line-height: $line-height-normal;
-      }
+    &__title--black span{
+      color: $color-title-home;
+      text-align: center;
+      font-family: $font-family-title;
+      font-size: $font-size-title;
+      font-style: $font-style-normal;
+      font-weight: $font-weight-title;
+      line-height: $line-height-normal;
     }
   }
   &__location {
@@ -58,16 +58,13 @@
       display: flex;
       gap: 17px;
 
-      &--icon-color {
-        // display: flex;
-        // flex-direction: row;
+      &--grey i {
         max-width: 12px;
         height: 16px;
 
         fill: var(--grey, #353535);
       }
-
-      &--search-txt {
+      &--grey span {
         color: var(--grey, #353535);
         font-family: $font-family;
         font-size: $font-size-mini;
@@ -75,15 +72,7 @@
         font-weight: $font-weight-search;
         line-height: $line-height-normal;
       }
-      
-      // .search {
-      //   color: var(--grey, #353535);
-      //   font-family: $font-family;
-      //   font-size: $font-size-mini;
-      //   font-style: $font-style-normal;
-      //   font-weight: $font-weight-search;
-      //   line-height: $line-height-normal;
-      // }
     }
+
   }
 }
