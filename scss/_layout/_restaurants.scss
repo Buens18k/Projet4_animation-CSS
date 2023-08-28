@@ -1,4 +1,4 @@
-.restaurants {
+.main-home__restaurants {
   @include flex-center(column);
 
   background: $background-white-resto;
@@ -16,11 +16,10 @@
     gap: 1.75rem;
   }
 
-  &-title {
+  h2 {
     display: flex;
     padding: 0rem 13rem 1.5rem 0rem;
     margin: 0;
-    color: $color-black;
     width: 100%;
 
     @include tablet-only {
@@ -32,7 +31,7 @@
     }
   }
 
-  &-cards {
+  &__cards {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     width: 100%;
@@ -40,19 +39,18 @@
     gap: 1.125rem;
 
     @include tablet-only {
-      grid-template-columns: repeat(2,50%);
+      grid-template-columns: repeat(2, 50%);
       grid-gap: 2rem 3rem;
       width: 95%;
-
     }
 
     @include dekstop-only {
-      grid-template-columns: repeat(2,100%);
+      grid-template-columns: repeat(2, 100%);
       grid-gap: 3.12rem 6.25rem;
       width: 46%;
     }
 
-    .restaurants-card,
+    &__card,
     a {
       @include flex-column;
       align-items: center;
@@ -64,8 +62,8 @@
       margin-bottom: 0;
       /* Shadow/Card */
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-      
-      & img {
+
+      img {
         display: flex;
         width: 100%;
         height: 10.4375rem;
@@ -75,7 +73,7 @@
         object-fit: cover;
       }
 
-      .cta-badge {
+      &__badge {
         @include relative-center;
         left: 38%;
 
@@ -83,28 +81,27 @@
           left: 35%;
         }
 
-        .badge {
+        span {
           @include relative-center;
+          @include font-badge;
           padding: 7px;
           bottom: 150px;
-          // left: 37%;
           text-decoration: none;
           list-style: none;
           background-color: $background-badge;
           border-radius: 3px;
-          @include font-badge;
-  
+
           @include tablet-only {
             left: 1px;
           }
-  
+
           @include dekstop-only {
             left: 40%;
           }
         }
       }
 
-      .cta-txt {
+      &__txt {
         display: flex;
         width: 100%;
         padding: 0 10px 0 13px;
@@ -119,38 +116,45 @@
           justify-content: space-between;
           padding-right: 25px;
         }
-        
-        .card__txt {
+
+        &__title {
           @include flex-column;
           text-decoration: none;
           width: 100%;
           height: auto;
           margin: 0;
           gap: 0.31rem;
-          color: $color-black;
-          
+          // color: $color-black;
+
           h3 {
             height: 1.25rem;
           }
-          
+
           h4 {
             width: 15.4375rem;
             height: 1.5rem;
           }
         }
-        
-        .btn-heart {
+
+        &__heart {
           position: relative;
-          
-          &:hover svg{
+
+          &:hover svg {
             fill: url(#heart-gradient);
           }
         }
+        &--black, h3, h4 {
+          color: $color-black;
+  
+        }
       }
-      
+
       .cta_gap {
         padding-top: 1rem;
       }
     }
+  }
+  &--black h2 {
+    color: #000;
   }
 }
