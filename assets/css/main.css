@@ -549,7 +549,7 @@ h4 {
   color: #000;
 }
 
-.footer {
+.footer-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -560,7 +560,7 @@ h4 {
   background: #353535;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer-home {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -570,7 +570,7 @@ h4 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer {
+  .footer-home {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -579,38 +579,38 @@ h4 {
     gap: 1rem;
   }
 }
-.footer-cta {
+.footer-home__cta {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .footer-cta {
+  .footer-home__cta {
     justify-content: space-between;
     flex-direction: row-reverse;
     gap: 4rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer-cta {
+  .footer-home__cta {
     justify-content: space-between;
     flex-direction: row-reverse;
     gap: 4rem;
   }
 }
-.footer-cta__logo {
+.footer-home__cta__logo {
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .footer-cta__logo {
+  .footer-home__cta__logo {
     align-items: flex-end;
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer-cta__logo {
+  .footer-home__cta__logo {
     align-items: flex-end;
   }
 }
-.footer-cta__logo .logo {
+.footer-home__cta__logo img {
   max-width: 8.59888rem;
   max-height: 1.6875rem;
   flex-shrink: 0;
@@ -618,20 +618,20 @@ h4 {
   padding: 3px 30px 5px 0px;
 }
 @media screen and (min-width: 768px) {
-  .footer-cta__logo .logo {
+  .footer-home__cta__logo img {
     padding-top: 0px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer-cta__logo .logo {
+  .footer-home__cta__logo img {
     padding-top: 0px;
   }
 }
-.footer-cta__nav {
+.footer-home__cta__nav {
   display: flex;
   flex-direction: column;
 }
-.footer-cta__nav-lists {
+.footer-home__cta__nav__lists {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -640,7 +640,7 @@ h4 {
   gap: 0.44rem;
 }
 @media screen and (min-width: 768px) {
-  .footer-cta__nav-lists {
+  .footer-home__cta__nav__lists {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
@@ -649,7 +649,7 @@ h4 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer-cta__nav-lists {
+  .footer-home__cta__nav__lists {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
@@ -657,24 +657,35 @@ h4 {
     gap: 2.44rem;
   }
 }
-.footer-cta__nav-lists a {
+.footer-home__cta__nav__lists__list,
+.footer-home__cta__nav__lists a {
   display: flex;
   gap: 1rem;
-  color: var(--white, #fff);
 }
 @media screen and (min-width: 1440px) {
-  .footer-cta__nav-lists a {
+  .footer-home__cta__nav__lists__list,
+  .footer-home__cta__nav__lists a {
     gap: 0.5rem;
   }
 }
-.footer-cta__nav-lists .list__itm {
+.footer-home__cta__nav__lists__list--white i,
+.footer-home__cta__nav__lists__list span,
+.footer-home__cta__nav__lists__list svg,
+.footer-home__cta__nav__lists__list a,
+.footer-home__cta__nav__lists a--white i,
+.footer-home__cta__nav__lists a span,
+.footer-home__cta__nav__lists a svg,
+.footer-home__cta__nav__lists a a {
+  color: var(--white, #fff);
+}
+.footer-home__cta__nav__lists i {
   display: flex;
   align-items: center;
   max-width: 0.6875rem;
   height: auto;
   transform: scale(0.75);
 }
-.footer-cta__nav-lists .txt {
+.footer-home__cta__nav__lists span {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;

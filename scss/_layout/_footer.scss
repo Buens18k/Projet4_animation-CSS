@@ -1,4 +1,4 @@
-.footer {
+.footer-home {
   @include flex-column;
   justify-content: center;
   align-items: flex-start;
@@ -24,7 +24,7 @@
     padding: 1.875rem 1.5625rem;
     gap: 1rem;
   }
-  &-cta {
+  &__cta {
     display: flex;
     flex-direction: column;
 
@@ -50,7 +50,7 @@
       @include dekstop-only {
         align-items: flex-end;
       }
-      .logo {
+      img {
         max-width: 8.59888rem;
         max-height: 1.6875rem;
         flex-shrink: 0;
@@ -58,11 +58,11 @@
         padding: 3px 30px 5px 0px;
 
         @include tablet-only {
-          padding-top: 0px;            
+          padding-top: 0px;
         }
 
         @include dekstop-only {
-          padding-top: 0px;            
+          padding-top: 0px;
         }
       }
     }
@@ -70,7 +70,7 @@
       display: flex;
       flex-direction: column;
 
-      &-lists {
+      &__lists {
         @include flex-column;
 
         list-style: none;
@@ -94,17 +94,24 @@
           gap: 2.44rem;
         }
 
+        &__list,
         a {
           display: flex;
           gap: 1rem;
-          color: var(--white, #fff);
 
           @include dekstop-only {
             gap: 0.5rem;
           }
+
+          &--white i,
+          span,
+          svg,
+          a {
+            color: var(--white, #fff);
+          }
         }
 
-        .list__itm {
+        i {
           display: flex;
           align-items: center;
           max-width: 0.6875rem;
@@ -112,7 +119,7 @@
           transform: scale(0.75);
         }
 
-        .txt {
+        span {
           @include font-list;
         }
       }
