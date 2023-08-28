@@ -285,7 +285,7 @@ h4 {
     gap: 1.56rem;
   }
 }
-.main-home__functioning-cta__ttle {
+.main-home__functioning-cta h2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -294,11 +294,11 @@ h4 {
   padding-right: 162px;
 }
 @media screen and (min-width: 768px) {
-  .main-home__functioning-cta__ttle {
+  .main-home__functioning-cta h2 {
     justify-content: flex-start;
   }
 }
-.main-home__functioning-cta__itm {
+.main-home__functioning-cta ol {
   display: flex;
   flex-direction: column;
   gap: 1.56rem;
@@ -309,7 +309,7 @@ h4 {
   width: 100%;
 }
 @media screen and (min-width: 1440px) {
-  .main-home__functioning-cta__itm {
+  .main-home__functioning-cta ol {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -317,7 +317,7 @@ h4 {
     gap: 2.28rem;
   }
 }
-.main-home__functioning-cta__itm .itm {
+.main-home__functioning-cta ol li {
   position: relative;
   text-align: center;
   width: 100%;
@@ -328,36 +328,27 @@ h4 {
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.main-home__functioning-cta__itm .itm .itm-logo {
+.main-home__functioning-cta ol li i {
   position: relative;
   text-align: center;
   left: -12%;
   height: 1.24394rem;
 }
-.main-home__functioning-cta__itm .itm .itm-logo__activ {
+.main-home__functioning-cta ol li .itm-logo__activ {
   color: var(--primary, #9356DC);
 }
-.main-home__functioning-cta__itm .itm .itm-logo__menu {
+.main-home__functioning-cta ol li span {
   position: relative;
   text-align: center;
-  left: -14%;
-}
-.main-home__functioning-cta__itm .itm .itm-txt {
-  position: relative;
-  text-align: center;
-  left: -5%;
-  color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  left: -14%;
+  left: -5%;
 }
-.main-home__functioning-cta__itm .itm .itm__txt {
-  position: relative;
-  left: -6px;
-}
-.main-home__functioning-cta__itm .itm::before {
+.main-home__functioning-cta ol li::before {
   content: counter(list-item);
   display: flex;
   flex-direction: row;
@@ -371,6 +362,9 @@ h4 {
   color: #fff;
   width: 1.5rem;
   height: 1.5rem;
+}
+.main-home__functioning-cta--black h2, .main-home__functioning span {
+  color: #000;
 }
 
 .restaurants {

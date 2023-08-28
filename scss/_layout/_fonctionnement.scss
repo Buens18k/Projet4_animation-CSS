@@ -11,7 +11,7 @@
 
   @include dekstop-only {
     padding: 3.125rem 11.25rem;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
   &-cta {
     @include flex-center(column);
@@ -23,8 +23,8 @@
       gap: 1.56rem;
     }
 
-    &__ttle {
-      display:flex ;
+    h2 {
+      display: flex;
       flex-wrap: wrap;
       width: 100%;
       height: auto;
@@ -35,7 +35,7 @@
         justify-content: flex-start;
       }
     }
-    &__itm {
+    ol {
       @include flex-column;
       gap: 1.56rem;
       margin: 0;
@@ -52,45 +52,37 @@
         @include flex-center(row);
         gap: 2.28rem;
       }
-      .itm {
+
+      li {
         @include relative-center;
         width: 100%;
         height: auto;
         border-radius: 1.25rem;
         background: $background-white-grey;
         padding: 1.6rem 2rem;
+
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        
-        .itm-logo{
+
+        i {
           @include relative-center;
           left: -12%;
           height: 1.24394rem;
         }
-        
-        .itm-logo__activ{
+
+        .itm-logo__activ {
           color: $color-activ;
         }
-        
-        .itm-logo__menu{
+
+        span {
           @include relative-center;
+          @include font-list;
           left: -14%;
-        }
-        
-        .itm-txt{
-          @include relative-center;
           left: -5%;
-          color: $color-black;
-          @include font-list
-        }
-        
-        .itm__txt{
-          position: relative;
-          left: -6px;
         }
       }
-      
-      .itm::before {
+
+      li::before {
         content: counter(list-item);
         @include flex-center(row);
         position: absolute;
@@ -103,5 +95,9 @@
         height: 1.5rem;
       }
     }
+  }
+
+  &-cta--black h2, span{
+    color: #000;
   }
 }
