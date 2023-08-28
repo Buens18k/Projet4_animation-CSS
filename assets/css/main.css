@@ -88,7 +88,7 @@ h4 {
   padding-bottom: 0px;
   align-items: flex-start;
 }
-.header-home .header {
+.header-home__header {
   display: flex;
   justify-content: center;
   border: none;
@@ -100,21 +100,21 @@ h4 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
-  .header-home .header {
+  .header-home__header {
     height: 45px;
     padding: 30px 0px 31.798px 0px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .header-home .header {
+  .header-home__header {
     height: 90px;
     padding: 30px 0px 31.798px 0px;
   }
 }
-.header-home .header .icon-back {
+.header-home__header__icon-back {
   display: none;
 }
-.header-home .header .header-title {
+.header-home__header__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +122,7 @@ h4 {
   max-height: 36px;
   padding: 0rem 1.1875rem 0rem 1rem;
 }
-.header-home .header .header-title .title-home {
+.header-home__header__title--txt--color {
   color: black;
   text-align: center;
   font-family: Shrikhand;
@@ -131,7 +131,7 @@ h4 {
   font-weight: 400;
   line-height: normal;
 }
-.header-home .location {
+.header-home__location {
   display: flex;
   width: 100%;
   height: 50px;
@@ -139,18 +139,16 @@ h4 {
   align-items: center;
   background: var(--grey-2, #eaeaea);
 }
-.header-home .location .location-search {
+.header-home__location__search {
   display: flex;
   gap: 17px;
 }
-.header-home .location .location-search .location-icon {
-  display: flex;
-  flex-direction: row;
+.header-home__location__search--icon-color {
   max-width: 12px;
   height: 16px;
   fill: var(--grey, #353535);
 }
-.header-home .location .location-search .search {
+.header-home__location__search--search-txt {
   color: var(--grey, #353535);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
