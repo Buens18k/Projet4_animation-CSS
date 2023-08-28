@@ -1,7 +1,6 @@
 .restaurants {
-  @include flex-column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center(column);
+
   background: $background-white-resto;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 
@@ -103,11 +102,8 @@
             left: 40%;
           }
         }
-
       }
-      
-      
-      
+
       .cta-txt {
         display: flex;
         width: 100%;

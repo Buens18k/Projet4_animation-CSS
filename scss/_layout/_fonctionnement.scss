@@ -1,4 +1,4 @@
-.functioning {
+.main-home__functioning {
   display: flex;
   height: auto;
   width: 100%;
@@ -14,19 +14,17 @@
     justify-content: flex-start
   }
   &-cta {
-    @include flex-column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center(column);
     gap: 1.63rem;
     width: 100%;
     height: auto;
+
     @include dekstop-only {
       gap: 1.56rem;
     }
+
     &__ttle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display:flex ;
       flex-wrap: wrap;
       width: 100%;
       height: auto;
@@ -36,11 +34,9 @@
       @include tablet-only {
         justify-content: flex-start;
       }
-
     }
     &__itm {
       @include flex-column;
-      align-items: center;
       gap: 1.56rem;
       margin: 0;
       padding: 0;
@@ -49,50 +45,54 @@
       width: 100%;
 
       // @include tablet-only {
-      //   flex-direction: row;
+      //   @include flex-center(row);
       // }
 
       @include dekstop-only {
-        flex-direction: row;
-        align-items: center;
+        @include flex-center(row);
         gap: 2.28rem;
       }
       .itm {
         @include relative-center;
         width: 100%;
-        // max-width: 20.15538rem;
         height: auto;
         border-radius: 1.25rem;
         background: $background-white-grey;
         padding: 1.6rem 2rem;
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        
         .itm-logo{
           @include relative-center;
           left: -12%;
           height: 1.24394rem;
         }
+        
         .itm-logo__activ{
           color: $color-activ;
         }
+        
         .itm-logo__menu{
           @include relative-center;
           left: -14%;
         }
+        
         .itm-txt{
           @include relative-center;
           left: -5%;
           color: $color-black;
           @include font-list
         }
+        
         .itm__txt{
           position: relative;
           left: -6px;
         }
       }
+      
       .itm::before {
         content: counter(list-item);
-        @include flex-center;
+        @include flex-center(row);
         position: absolute;
         top: 1.5rem;
         left: -1rem;
