@@ -1,38 +1,40 @@
-.hero{
-    @include flex-center(column);
-    width: 100%;
-    height: auto;
-    background: #f6f6f6;
-    padding: 0 0 3.44rem 0;
+.main-home__hero {
+  @include flex-center(column);
+  width: 100%;
+  height: auto;
+  background: #f6f6f6;
+  padding: 0 0 3.44rem 0;
 
-    @include tablet-only {
-        gap: 0.5rem;
-        padding-bottom: 40px;
-    }
-    @include dekstop-only {
-        gap: 1.13rem;
-        padding-bottom: 30.08px;
-    }
-}
-.hero-title{
+  @include tablet-only {
+    gap: 0.5rem;
+    padding-bottom: 40px;
+  }
+  @include dekstop-only {
+    gap: 1.13rem;
+    padding-bottom: 30.08px;
+  }
+
+  &__title {
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items: flex-end;
     width: 100%;
     height: auto;
 
     @include tablet-only {
-        margin-top: 2rem;
-        align-items: center;
-        height: 2.9735rem;
+      margin-top: 2rem;
+      align-items: center;
+      height: 2.9735rem;
     }
 
     @include dekstop-only {
-        margin-top: 1.87rem;
+      margin-top: 1.87rem;
     }
-}
-
-.hero-txt{
+  }
+  &__title--black h1 {
+    color: #000;
+  }
+  &__txt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,43 +42,50 @@
     height: 2.875rem;
 
     @include tablet-only {
-        width: 68.29%;
+      width: 68.29%;
     }
-}
-
-.hero-btn{
+  }
+  &__txt--black p {
+    color: var(--grey, #353535);
+  }
+  &__btn {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 1.69rem;
 
     @include tablet-only {
-        margin-top: 0.5rem;
+      margin-top: 0.5rem;
     }
 
-    & button{
-        width: 55%;
-        max-width: 218px;
-        height: 50px;
-        border-radius: 1.5625rem;
-        border: none;
-        background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-    }
+    button {
+      width: 55%;
+      max-width: 218px;
+      height: 50px;
+      border-radius: 1.5625rem;
+      border: none;
 
-    & button:hover{
+      &:hover{
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
         transform: scale(1.05);
+      }
     }
+  }
+  &__btn--gradient button {
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 
-    .btn{
-        color: var(--white, #FFF);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
+    background: var(
+      --button-gradient,
+      linear-gradient(175deg, #ff79da 0%, #9356dc 100%)
+    );
+
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
 }
