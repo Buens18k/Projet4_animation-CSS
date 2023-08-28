@@ -14,8 +14,7 @@ body {
 
 header,
 main {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 a {
@@ -45,9 +44,11 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
   @include tablet-only {
     font-size: 2.2rem;
   }
+  
   @include dekstop-only {
     font-size: 2.5rem;
   }

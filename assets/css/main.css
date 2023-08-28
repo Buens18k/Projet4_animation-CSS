@@ -1,3 +1,9 @@
+.header-home__location, .header-home__header__title, .header-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -84,9 +90,7 @@ h4 {
 
 .header-home {
   width: 100%;
-  justify-content: center;
   padding-bottom: 0px;
-  align-items: flex-start;
 }
 .header-home__header {
   display: flex;
@@ -115,9 +119,6 @@ h4 {
   display: none;
 }
 .header-home__header__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 197px;
   max-height: 36px;
   padding: 0rem 1.1875rem 0rem 1rem;
@@ -132,12 +133,8 @@ h4 {
   line-height: normal;
 }
 .header-home__location {
-  display: flex;
   width: 100%;
   height: 50px;
-  justify-content: center;
-  align-items: center;
-  background: var(--grey-2, #eaeaea);
 }
 .header-home__location__search {
   display: flex;
@@ -146,15 +143,22 @@ h4 {
 .header-home__location__search--grey i {
   max-width: 12px;
   height: 16px;
-  fill: var(--grey, #353535);
 }
 .header-home__location__search--grey span {
-  color: var(--grey, #353535);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.header-home__location--grey {
+  background: var(--grey-2, #eaeaea);
+}
+.header-home__location--grey i {
+  fill: var(--grey, #353535);
+}
+.header-home__location--grey span {
+  color: var(--grey, #353535);
 }
 
 .hero {
@@ -282,8 +286,6 @@ h4 {
 }
 .functioning-cta__ttle {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -298,7 +300,6 @@ h4 {
 .functioning-cta__itm {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.56rem;
   margin: 0;
   padding: 0;
@@ -308,7 +309,9 @@ h4 {
 }
 @media screen and (min-width: 1440px) {
   .functioning-cta__itm {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 2.28rem;
   }
@@ -356,6 +359,7 @@ h4 {
 .functioning-cta__itm .itm::before {
   content: counter(list-item);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -642,7 +646,7 @@ h4 {
     justify-content: flex-end;
     align-items: flex-end;
     margin: 0;
-    gap: 2.44rem;
+    gap: 1.44rem;
   }
 }
 @media screen and (min-width: 1440px) {
