@@ -57,8 +57,9 @@
     @content;
   }
 }
-@mixin dekstop-only {
+@mixin desktop-only {
   @media screen and (min-width: map-get($breakpoint, dekstop)) {
     @content;
   }
 }
+

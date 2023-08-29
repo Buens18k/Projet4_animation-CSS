@@ -16,7 +16,7 @@
     gap: 1rem;
   }
 
-  @include dekstop-only {
+  @include desktop-only {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -34,7 +34,7 @@
       gap: 4rem;
     }
 
-    @include dekstop-only {
+    @include desktop-only {
       justify-content: space-between;
       flex-direction: row-reverse;
       gap: 4rem;
@@ -47,7 +47,7 @@
         align-items: flex-end;
       }
 
-      @include dekstop-only {
+      @include desktop-only {
         align-items: flex-end;
       }
       img {
@@ -61,7 +61,7 @@
           padding-top: 0px;
         }
 
-        @include dekstop-only {
+        @include desktop-only {
           padding-top: 0px;
         }
       }
@@ -86,7 +86,7 @@
           gap: 1.44rem;
         }
 
-        @include dekstop-only {
+        @include desktop-only {
           flex-direction: row;
           justify-content: flex-end;
           align-items: flex-end;
@@ -99,7 +99,7 @@
           display: flex;
           gap: 1rem;
 
-          @include dekstop-only {
+          @include desktop-only {
             gap: 0.5rem;
           }
 

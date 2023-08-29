@@ -9,17 +9,19 @@
     padding: 2rem 11rem;
   }
 
-  @include dekstop-only {
+  @include desktop-only {
     padding: 3.125rem 11.25rem;
     justify-content: flex-start;
+    margin: 0 auto;
   }
+
   &-cta {
     @include flex-center(column);
     gap: 1.63rem;
     width: 100%;
     height: auto;
 
-    @include dekstop-only {
+    @include desktop-only {
       gap: 1.56rem;
     }
 
@@ -35,6 +37,7 @@
         justify-content: flex-start;
       }
     }
+    
     ol {
       @include flex-column;
       gap: 1.56rem;
@@ -44,11 +47,8 @@
       list-style: none;
       width: 100%;
 
-      // @include tablet-only {
-      //   @include flex-center(row);
-      // }
 
-      @include dekstop-only {
+      @include desktop-only {
         @include flex-center(row);
         gap: 2.28rem;
       }
@@ -66,8 +66,16 @@
 
         i {
           @include relative-center;
-          left: -12%;
+          left: -15%;
           height: 1.24394rem;
+
+          @include tablet-only {
+            left: -25%;
+          }
+
+          @include desktop-only {
+            left: -49px;
+          }
         }
 
         .itm-logo__activ {
@@ -77,8 +85,11 @@
         span {
           @include relative-center;
           @include font-list;
-          left: -14%;
           left: -5%;
+
+          @include desktop-only {
+            left: -5px;
+          }
         }
       }
 
@@ -97,7 +108,8 @@
     }
   }
 
-  &-cta--black h2, span{
+  &-cta--title-black h2,
+  span {
     color: #000;
   }
 }

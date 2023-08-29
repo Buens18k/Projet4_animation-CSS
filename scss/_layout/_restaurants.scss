@@ -1,7 +1,5 @@
 .main-home__restaurants {
   @include flex-center(column);
-
-  background: $background-white-resto;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
 
   @include tablet-only {
@@ -10,7 +8,7 @@
     gap: 1.75rem;
   }
 
-  @include dekstop-only {
+  @include desktop-only {
     padding: 1.88rem 11.25rem;
     align-items: flex-start;
     gap: 1.75rem;
@@ -26,8 +24,10 @@
       padding: 0;
     }
 
-    @include dekstop-only {
+    @include desktop-only {
       padding: 0;
+      max-width: 1440px;
+      margin: 0 auto;
     }
   }
 
@@ -44,10 +44,10 @@
       width: 95%;
     }
 
-    @include dekstop-only {
+    @include desktop-only {
       grid-template-columns: repeat(2, 100%);
       grid-gap: 3.12rem 6.25rem;
-      width: 46%;
+      width: 47%;
     }
 
     &__card,
@@ -95,7 +95,7 @@
             left: 1px;
           }
 
-          @include dekstop-only {
+          @include desktop-only {
             left: 40%;
           }
         }
@@ -112,7 +112,7 @@
           padding-right: 25px;
         }
 
-        @include dekstop-only {
+        @include desktop-only {
           justify-content: space-between;
           padding-right: 25px;
         }
@@ -153,6 +153,7 @@
       }
     }
   }
+  
   &--black h2 {
     color: #000;
   }

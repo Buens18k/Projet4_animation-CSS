@@ -3,13 +3,13 @@
   width: 100%;
   height: auto;
   background: #f6f6f6;
-  padding: 0 0 3.44rem 0;
+  padding: 0 1.63rem 3.44rem 2.13rem;
 
   @include tablet-only {
     gap: 0.5rem;
     padding-bottom: 40px;
   }
-  @include dekstop-only {
+  @include desktop-only {
     gap: 1.13rem;
     padding-bottom: 30.08px;
   }
@@ -27,13 +27,15 @@
       height: 2.9735rem;
     }
 
-    @include dekstop-only {
+    @include desktop-only {
       margin-top: 1.87rem;
     }
   }
+
   &__title--black h1 {
     color: #000;
   }
+
   &__txt {
     display: flex;
     justify-content: center;
@@ -45,9 +47,11 @@
       width: 68.29%;
     }
   }
+
   &__txt--black p {
     color: var(--grey, #353535);
   }
+
   &__btn {
     display: flex;
     justify-content: center;
@@ -71,6 +75,7 @@
       }
     }
   }
+  
   &__btn--gradient button {
     color: var(--white, #fff);
     text-align: center;
