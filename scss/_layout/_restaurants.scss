@@ -53,6 +53,7 @@
     &__card,
     a {
       @include flex-column;
+      position: relative;
       align-items: center;
       width: 100%;
       height: 15.6875rem;
@@ -74,29 +75,32 @@
       }
 
       &__badge {
-        @include relative-center;
-        left: 38%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        // @include relative-center;
+        // left: 38%;
 
         @include tablet-only {
-          left: 35%;
+          // left: 35%;
         }
 
         span {
           @include relative-center;
           @include font-badge;
           padding: 7px;
-          bottom: 150px;
+          // bottom: 150px;
           text-decoration: none;
           list-style: none;
           background-color: $background-badge;
           border-radius: 3px;
 
           @include tablet-only {
-            left: 1px;
+            // left: 1px;
           }
 
           @include desktop-only {
-            left: 40%;
+            // left: 40%;
           }
         }
       }

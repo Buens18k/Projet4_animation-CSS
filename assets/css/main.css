@@ -110,8 +110,17 @@ h4 {
     padding: 30px 0px 31.798px 0px;
   }
 }
+.header-home__header--menu {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.875rem 5.5625rem 0.8125rem 1.0625rem;
+  gap: 20%;
+}
 .header-home__header__icon-back {
   display: none;
+}
+.header-home__header__icon-back--menu {
+  display: flex;
 }
 .header-home__header__title {
   max-width: 197px;
@@ -319,7 +328,7 @@ h4 {
   position: relative;
   text-align: center;
   width: 100%;
-  height: auto;
+  height: 4.52369rem;
   border-radius: 1.25rem;
   background: #f6f6f6;
   padding: 1.6rem 2rem;
@@ -339,7 +348,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol li i {
-    left: -49px;
+    left: -40px;
   }
 }
 .main-home__functioning-cta ol li .itm-logo__activ {
@@ -444,6 +453,7 @@ h4 {
 .main-home__restaurants__cards a {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   width: 100%;
   height: 15.6875rem;
@@ -466,15 +476,9 @@ h4 {
 }
 .main-home__restaurants__cards__card__badge,
 .main-home__restaurants__cards a__badge {
-  position: relative;
-  text-align: center;
-  left: 38%;
-}
-@media screen and (min-width: 768px) {
-  .main-home__restaurants__cards__card__badge,
-  .main-home__restaurants__cards a__badge {
-    left: 35%;
-  }
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .main-home__restaurants__cards__card__badge span,
 .main-home__restaurants__cards a__badge span {
@@ -486,23 +490,10 @@ h4 {
   font-weight: 500;
   line-height: normal;
   padding: 7px;
-  bottom: 150px;
   text-decoration: none;
   list-style: none;
   background-color: #99E2D0;
   border-radius: 3px;
-}
-@media screen and (min-width: 768px) {
-  .main-home__restaurants__cards__card__badge span,
-  .main-home__restaurants__cards a__badge span {
-    left: 1px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .main-home__restaurants__cards__card__badge span,
-  .main-home__restaurants__cards a__badge span {
-    left: 40%;
-  }
 }
 .main-home__restaurants__cards__card__txt,
 .main-home__restaurants__cards a__txt {
@@ -708,6 +699,57 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+}
+.main-menu__picture {
+  width: 100%;
+  height: auto;
+}
+.main-menu__picture img {
+  object-fit: cover;
+  height: 275px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.main-menu__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  border-radius: 50px;
+  width: 375px;
+  z-index: 2;
+  position: relative;
+  margin-top: -40px;
+}
+.main-menu__card__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-menu__card__title h1 {
+  color: var(--black, #101010);
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 25px;
+}
+.main-menu__card__title svg {
+  position: relative;
+  top: 35px;
+  right: 25px;
+}
+.main-menu__card__title svg:hover {
+  fill: var(--primary, #9356DC);
 }
 
 /*# sourceMappingURL=main.css.map */
