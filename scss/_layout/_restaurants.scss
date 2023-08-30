@@ -1,0 +1,160 @@
+.main-home__restaurants {
+  @include flex-center(column);
+  padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+
+  @include tablet-only {
+    padding: 1.88rem 11.25rem;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+
+  @include desktop-only {
+    padding: 1.88rem 11.25rem;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+
+  h2 {
+    display: flex;
+    padding: 0rem 13rem 1.5rem 0rem;
+    margin: 0;
+    width: 100%;
+
+    @include tablet-only {
+      padding: 0;
+    }
+
+    @include desktop-only {
+      padding: 0;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    width: 100%;
+    height: auto;
+    gap: 1.125rem;
+
+    @include tablet-only {
+      grid-template-columns: repeat(2, 50%);
+      grid-gap: 2rem 3rem;
+      width: 95%;
+    }
+
+    @include desktop-only {
+      grid-template-columns: repeat(2, 100%);
+      grid-gap: 3.12rem 6.25rem;
+      width: 47%;
+    }
+
+    &__card,
+    a {
+      @include flex-column;
+      align-items: center;
+      width: 100%;
+      height: 15.6875rem;
+      border-radius: 0.9375rem;
+      background: $background-card;
+      z-index: 0;
+      margin-bottom: 0;
+      /* Shadow/Card */
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+      img {
+        display: flex;
+        width: 100%;
+        height: 10.4375rem;
+        border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+      }
+
+      &__badge {
+        @include relative-center;
+        left: 38%;
+
+        @include tablet-only {
+          left: 35%;
+        }
+
+        span {
+          @include relative-center;
+          @include font-badge;
+          padding: 7px;
+          bottom: 150px;
+          text-decoration: none;
+          list-style: none;
+          background-color: $background-badge;
+          border-radius: 3px;
+
+          @include tablet-only {
+            left: 1px;
+          }
+
+          @include desktop-only {
+            left: 40%;
+          }
+        }
+      }
+
+      &__txt {
+        display: flex;
+        width: 100%;
+        padding: 0 10px 0 13px;
+        height: auto;
+
+        @include tablet-only {
+          justify-content: space-between;
+          padding-right: 25px;
+        }
+
+        @include desktop-only {
+          justify-content: space-between;
+          padding-right: 25px;
+        }
+
+        &__title {
+          @include flex-column;
+          text-decoration: none;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          gap: 0.31rem;
+
+          h3 {
+            height: 1.25rem;
+          }
+
+          h4 {
+            width: 15.4375rem;
+            height: 1.5rem;
+          }
+        }
+
+        &__heart {
+          position: relative;
+
+          &:hover svg {
+            fill: url(#heart-gradient);
+          }
+        }
+        &--black, h3, h4 {
+          color: $color-black;
+  
+        }
+      }
+
+      .cta_gap {
+        padding-top: 1rem;
+      }
+    }
+  }
+  
+  &--black h2 {
+    color: #000;
+  }
+}

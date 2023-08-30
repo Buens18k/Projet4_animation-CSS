@@ -1,0 +1,128 @@
+.footer-home {
+  @include flex-column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 22px 25px;
+  gap: 16px;
+  background: $background-grey;
+
+  @include tablet-only {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 7.125rem;
+    padding: 1.5rem 1.5625rem;
+    gap: 1rem;
+  }
+
+  @include desktop-only {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 7.125rem;
+    padding: 1.875rem 1.5625rem;
+    gap: 1rem;
+  }
+  &__cta {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet-only {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      gap: 4rem;
+    }
+
+    @include desktop-only {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      gap: 4rem;
+    }
+
+    &__logo {
+      display: flex;
+
+      @include tablet-only {
+        align-items: flex-end;
+      }
+
+      @include desktop-only {
+        align-items: flex-end;
+      }
+      img {
+        max-width: 8.59888rem;
+        max-height: 1.6875rem;
+        flex-shrink: 0;
+        filter: invert(50);
+        padding: 3px 30px 5px 0px;
+
+        @include tablet-only {
+          padding-top: 0px;
+        }
+
+        @include desktop-only {
+          padding-top: 0px;
+        }
+      }
+    }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+
+      &__lists {
+        @include flex-column;
+
+        list-style: none;
+        align-items: flex-start;
+        padding: 0;
+        gap: 0.44rem;
+
+        @include tablet-only {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin: 0;
+          gap: 1.44rem;
+        }
+
+        @include desktop-only {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin: 0;
+          gap: 2.44rem;
+        }
+
+        &__list,
+        a {
+          display: flex;
+          gap: 1rem;
+
+          @include desktop-only {
+            gap: 0.5rem;
+          }
+
+          &--white i,
+          span,
+          svg,
+          a {
+            color: var(--white, #fff);
+          }
+        }
+
+        i {
+          display: flex;
+          align-items: center;
+          max-width: 0.6875rem;
+          height: auto;
+          transform: scale(0.75);
+        }
+
+        span {
+          @include font-list;
+        }
+      }
+    }
+  }
+}
