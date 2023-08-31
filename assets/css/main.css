@@ -869,5 +869,64 @@ h4 {
   font-weight: 300;
   line-height: normal;
 }
+.main-menu__card__desserts {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 620%;
+  gap: 12px;
+  width: 100%;
+}
+.main-menu__card__desserts h2 {
+  position: relative;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main-menu__card__desserts h2::before {
+  content: "";
+  border-bottom: 3px solid #99e2d0;
+  position: absolute;
+  width: 2.5em;
+  top: 30px;
+}
+.main-menu__card__desserts__txt {
+  display: flex;
+  padding: 15px;
+  width: 96%;
+  cursor: pointer;
+  border-radius: 15.043px;
+  background: var(--White, #fff);
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+.main-menu__card__desserts__txt__title {
+  width: 100%;
+}
+.main-menu__card__desserts__txt__title h3 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.main-menu__card__desserts__txt__title h4 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
