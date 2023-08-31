@@ -184,6 +184,10 @@
             line-height: normal;
           }
         }
+        strong {
+          display: flex;
+          align-items: flex-end;
+        }
       }
     }
     &__desserts{
@@ -249,7 +253,10 @@
             line-height: normal;
           }
         }
-
+        strong {
+          display: flex;
+          align-items: flex-end;
+        }
       }
     }
   }
