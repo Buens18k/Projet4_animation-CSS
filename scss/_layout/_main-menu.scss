@@ -17,6 +17,8 @@
 
   &__card {
     // position: absolute;
+    // display: flex;
+    // flex-direction: column;
     padding: 15px;
     margin: 0 auto;
     background-color: #f6f6f6;
@@ -117,12 +119,71 @@
           display: flex;
           align-items: flex-end;
         }
+      }
+    }
+    &__dish{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 350%;
+      gap: 12px;
+      width: 100%;
 
-        // &__prix{
-        //   position: absolute;
-        //   left: 80%;
-        //   top: 35px;
-        // }
+      h2{
+        position: relative;
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &::before {
+          content: "";
+          border-bottom: 3px solid #99e2d0;
+          position: absolute;
+          width: 2.5em;
+          top: 30px;
+        }
+      }
+
+      &__txt{
+        display: flex;
+        padding: 15px;
+        width: 96%;
+        cursor: pointer;
+
+        border-radius: 15.043px;
+        background: var(--White, #fff);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+
+        &__title {
+          width: 100%;
+
+          h3 {
+            overflow: hidden;
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          h4 {
+            overflow: hidden;
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Roboto;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
       }
     }
   }
