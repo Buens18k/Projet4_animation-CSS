@@ -315,6 +315,12 @@ h4 {
   list-style: none;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .main-home__functioning-cta ol {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol {
     display: flex;

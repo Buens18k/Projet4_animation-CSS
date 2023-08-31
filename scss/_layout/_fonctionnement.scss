@@ -37,7 +37,7 @@
         justify-content: flex-start;
       }
     }
-    
+
     ol {
       @include flex-column;
       gap: 1.56rem;
@@ -47,6 +47,9 @@
       list-style: none;
       width: 100%;
 
+      // @include tablet-only {
+      //   @include flex-column;
+      // }
 
       @include desktop-only {
         @include flex-center(row);
