@@ -499,7 +499,7 @@ h4 {
 .main-home__restaurants__cards a__txt {
   display: flex;
   width: 100%;
-  padding: 0 10px 0 13px;
+  padding: 16px 10px 0 13px;
   height: auto;
 }
 @media screen and (min-width: 768px) {
