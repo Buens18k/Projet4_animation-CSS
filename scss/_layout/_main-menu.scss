@@ -1,7 +1,7 @@
 .main-menu {
-  display: flex;
-  flex-direction: column;
+@include flex-column;
   height: auto;
+  background: #fff;
 
   &__picture {
     display: flex;
@@ -17,8 +17,7 @@
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 40px;
     padding: 32px 8px 40px 8px;
     margin: 0 auto;
@@ -29,6 +28,17 @@
     z-index: 2;
     margin-top: -40px;
 
+    @include tablet-only {
+      width: 70%;
+      padding: 51px 110px 40px 110px;
+
+    }
+
+    @include desktop-only {
+      width: 70%;
+      padding: 51px 210px 40px 210px;
+    }
+
     &__title {
       display: flex;
       justify-content: space-between;
@@ -36,6 +46,16 @@
       padding-right: 24px;
       width: 100%;
       height: auto;
+
+      @include tablet-only {
+        justify-content: center;
+        gap: 20px;
+      }
+
+      @include desktop-only {
+        justify-content: center;
+        gap: 24px;
+      }
 
       h1 {
         display: flex;
@@ -50,6 +70,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        @include tablet-only {
+          width: auto;
+        }
+
+        @include desktop-only {
+          width: auto;
+        }
       }
 
       svg {
@@ -62,8 +90,7 @@
       }
     }
     &__enter {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 12px;
       width: 100%;
       height: auto;
@@ -103,8 +130,8 @@
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
         &__title {
-          display: flex;
-          flex-direction: column;
+          @include flex-column;
+
           width: 100%;
           height: auto;
           gap: 5px;
@@ -144,8 +171,8 @@
       }
     }
     &__dish {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
+
       gap: 12px;
       width: 100%;
       height: auto;
@@ -225,8 +252,8 @@
       }
     }
     &__desserts {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
+
       gap: 12px;
       width: 100%;
       height: auto;
@@ -265,8 +292,8 @@
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
 
         &__title {
-          display: flex;
-          flex-direction: column;
+          @include flex-column;
+
           width: 100%;
           height: auto;
           gap: 5px;
@@ -326,7 +353,7 @@
           $color-primary,
           $color-secondary 120%
         );
-        
+
         span {
           color: var(--White, #fff);
           text-align: center;
