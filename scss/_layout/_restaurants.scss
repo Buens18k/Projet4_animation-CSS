@@ -145,8 +145,8 @@
           position: relative;
 
           &:hover svg {
-            // fill: url(#heart-gradient);
-            fill: $color-heart;
+            fill: url(#heart-gradient);
+            // fill: $color-heart;
           }
         }
         &--black, h3, h4 {

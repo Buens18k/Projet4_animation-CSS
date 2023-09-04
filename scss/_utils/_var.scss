@@ -14,16 +14,23 @@ $line-height-normal: normal;
 
 $background-white: white;
 $background-white-grey: #f6f6f6;
-$background-white-resto: #EAEAEA;
+$background-white-resto: #eaeaea;
 $background-grey: #353535;
-$background-card: #FFF;
-$background-badge: #99E2D0;
+$background-card: #fff;
+$background-badge: #99e2d0;
 
 $color-black: #000;
 $color-before: #fff;
-$color-activ: var(--primary, #9356DC);
+$color-activ: var(--primary, #9356dc);
 $box-shadow: rgba(0, 0, 0, 0.15);
 $color-title-home: black;
-$color-primary :#9356DC;
-$color-secondary :#FF79DA;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-switch: #99e2d0;
 $color-heart: linear-gradient(to top left, $color-secondary, $color-primary);
+$color-gradient: linear-gradient(to bottom, #ff79da, #9356dc);
+
+
+$numbers-articles: 9;
+$anim-dur: 700ms;
+$anim-delay: $anim-dur / $numbers-articles;
