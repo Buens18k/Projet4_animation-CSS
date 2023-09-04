@@ -50,6 +50,14 @@
   font-weight: 900;
 }
 
+@mixin boucle-articles {
+  @for $i from 1 through $numbers-articles {
+    &--#{$i}{
+      animation-delay: $anim-delay* $i;
+    }
+  }
+}
+
 // MEDIA QUERIES
 
 @mixin tablet-only {

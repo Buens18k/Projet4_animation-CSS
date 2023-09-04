@@ -140,10 +140,13 @@
         }
 
         &__heart {
+        $color-heart: linear-gradient(to top left, #FF79DA, #9356DC);
+
           position: relative;
 
           &:hover svg {
             fill: url(#heart-gradient);
+            // fill: $color-heart;
           }
         }
         &--black, h3, h4 {

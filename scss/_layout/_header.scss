@@ -29,6 +29,14 @@
       align-items: center;
       padding: 0.875rem 5.5625rem 0.8125rem 1.0625rem;
       gap: 20%;
+
+      @include tablet-only{
+        gap: 37%;
+      }
+
+      @include desktop-only {
+        gap: 40%;
+      }
     }
 
     &__icon-back {
