@@ -14,6 +14,19 @@
     transform: translateX(0px);
   }
 }
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -24,7 +37,7 @@ body {
   padding: 0;
   height: auto;
   margin: 0 auto;
-  background: var(--background, #F6F6F6);
+  background: var(--background, #f6f6f6);
 }
 
 header,
@@ -91,6 +104,49 @@ h4 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  animation: disappear 200ms 3s forwards;
+}
+.loader__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.loader__inner__img {
+  transform: scale(1.5);
+}
+.loader .lol {
+  display: flex;
+}
+.loader .lol i {
+  animation: spin 3s infinite linear;
+}
+.loader .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.loader .rubik-loader {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  top: 51.5%;
+  transform: translate(-50%, -50%);
+  background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header-home {
@@ -963,7 +1019,11 @@ h4 {
   cursor: pointer;
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to top left, #9356dc, #ff79da 120%);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+.main-menu__card__btn button:hover {
+  background-image: linear-gradient(to bottom, #ff98e2, #a36fe1);
+  box-shadow: 0px 4px 10px 0px #666666;
 }
 .main-menu__card__btn button span {
   color: var(--White, #fff);

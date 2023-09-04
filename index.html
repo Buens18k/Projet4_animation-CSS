@@ -24,6 +24,21 @@
     <title>Ohmyfood - Homepage</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="loader__inner">
+        <img
+          class="loader__inner__img"
+          src="/assets/Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg"
+          alt=""
+        />
+        <div class="lol">
+          <i class="fas fa-circle-notch fa-9x"></i>
+          <div class="wrapper">
+            <div class="rubik-loader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header-home">
       <div class="header-home__header">
         <div class="header-home__header__icon-back">
@@ -131,8 +146,8 @@
                         x2="3.43443"
                         y2="27.9923"
                       >
-                        <stop offset="0" stop-color="#9356DC" />
-                        <stop offset="1" stop-color="#FF79DA" />
+                        <stop offset="20%" stop-color="#9356DC" />
+                        <stop offset="28%" stop-color="#FF79DA" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -152,7 +167,9 @@
                 <span>Nouveau</span>
               </div>
               <div class="main-home__restaurants__cards__card__txt">
-                <div class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black">
+                <div
+                  class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black"
+                >
                   <h3>La note enchantée</h3>
                   <h4>Charonne</h4>
                 </div>
@@ -182,7 +199,9 @@
                 alt="image du restaurant À la française"
               />
               <div class="main-home__restaurants__cards__card__txt cta_gap">
-                <div class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black">
+                <div
+                  class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black"
+                >
                   <h3>À la française</h3>
                   <h4>Cité Rouge</h4>
                 </div>
@@ -198,7 +217,7 @@
                       d="M11.374 3.35701L12.22 2.40601C14.223 0.152006 17.405 -0.168994 19.525 1.80201C22.019 4.12501 22.156 8.32301 19.912 10.849L11.598 20.215C11.259 20.595 10.737 20.595 10.399 20.215L2.08501 10.85C-0.154987 8.32401 -0.0179873 4.12401 2.47701 1.80101C4.59801 -0.169994 7.78301 0.152006 9.78001 2.40601L10.627 3.35701L11.001 3.77701L11.374 3.35701Z"
                       stroke="#101010"
                     />
-                    <defs>
+                    <!-- <defs>
                       <linearGradient
                         id="heart-gradient"
                         x1="11.0002"
@@ -209,7 +228,7 @@
                         <stop offset="0" stop-color="#9356DC" />
                         <stop offset="1" stop-color="#FF79DA" />
                       </linearGradient>
-                    </defs>
+                    </defs> -->
                   </svg>
                 </div>
               </div>
@@ -224,7 +243,9 @@
                 alt="image du restaurant Le délice des sens"
               />
               <div class="main-home__restaurants__cards__card__txt cta_gap">
-                <div class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black">
+                <div
+                  class="main-home__restaurants__cards__card__txt__title main-home__restaurants__cards__card__txt__title--black"
+                >
                   <h3>Le délice des sens</h3>
                   <h4>Folie-Méricourt</h4>
                 </div>
@@ -240,7 +261,7 @@
                       d="M11.374 3.35701L12.22 2.40601C14.223 0.152006 17.405 -0.168994 19.525 1.80201C22.019 4.12501 22.156 8.32301 19.912 10.849L11.598 20.215C11.259 20.595 10.737 20.595 10.399 20.215L2.08501 10.85C-0.154987 8.32401 -0.0179873 4.12401 2.47701 1.80101C4.59801 -0.169994 7.78301 0.152006 9.78001 2.40601L10.627 3.35701L11.001 3.77701L11.374 3.35701Z"
                       stroke="#101010"
                     />
-                    <defs>
+                    <!-- <defs>
                       <linearGradient
                         id="heart-gradient"
                         x1="11.0002"
@@ -251,7 +272,7 @@
                         <stop offset="0" stop-color="#9356DC" />
                         <stop offset="1" stop-color="#FF79DA" />
                       </linearGradient>
-                    </defs>
+                    </defs> -->
                   </svg>
                 </div>
               </div>
@@ -270,13 +291,17 @@
         </div>
         <nav class="footer-home__cta__nav">
           <ol class="footer-home__cta__nav__lists">
-            <li class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white">
+            <li
+              class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white"
+            >
               <a href="">
                 <i class="fa-solid fa-utensils"></i>
                 <span>Proposer un restaurant</span>
               </a>
             </li>
-            <li class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white">
+            <li
+              class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white"
+            >
               <a href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -293,10 +318,14 @@
                 <span>Devenir partenaire</span>
               </a>
             </li>
-            <li class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white">
+            <li
+              class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white"
+            >
               <a href="">Mentions légales</a>
             </li>
-            <li class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white">
+            <li
+              class="footer-home__cta__nav__lists__list footer-home__cta__nav__lists__list--white"
+            >
               <a href="mailto:ohmyfood.contact@omf.com">Contact</a>
             </li>
           </ol>

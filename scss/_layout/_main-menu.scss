@@ -226,11 +226,13 @@
         /* Shadow/Button */
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
-        background: linear-gradient(
-          to top left,
-          $color-primary,
-          $color-secondary 120%
-        );
+        background: $color-gradient;
+
+        &:hover{
+          background-image: linear-gradient(to bottom, lighten($color-secondary, $amount: 6%), lighten($color-primary, 6%));
+          box-shadow: 0px 4px 10px 0px lighten($color-black, 40%);
+    
+        }
 
         span {
           color: var(--White, #fff);
