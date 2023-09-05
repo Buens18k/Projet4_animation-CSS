@@ -1,17 +1,23 @@
 .main-home__restaurants {
   @include flex-center(column);
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+  width: 100%;
 
   @include tablet-only {
     padding: 1.88rem 11.25rem;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
   }
 
   @include desktop-only {
-    padding: 1.88rem 11.25rem;
+    padding: 30px 180px;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   h2 {
@@ -48,6 +54,7 @@
       grid-template-columns: repeat(2, 100%);
       grid-gap: 3.12rem 6.25rem;
       width: 47%;
+      max-width: 1440px
     }
 
     &__card,
