@@ -350,7 +350,7 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-home__functioning {
     padding: 3.125rem 11.25rem;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0 auto;
   }
 }
@@ -366,6 +366,7 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta {
     gap: 1.56rem;
+    max-width: 1080px;
   }
 }
 .main-home__functioning-cta h2 {
