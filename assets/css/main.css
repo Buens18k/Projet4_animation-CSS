@@ -481,9 +481,13 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants {
-    padding: 1.88rem 11.25rem;
+    padding: 0px 180px;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 .main-home__restaurants h2 {
