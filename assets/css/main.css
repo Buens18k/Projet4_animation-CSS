@@ -116,34 +116,45 @@ h4 {
   height: 100vh;
   inset: 0;
   z-index: 2;
-  animation: disappear 200ms 3s forwards;
+  animation: disappear 200ms 2s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  border-right: 15px solid #9356dc;
+  border-top: 15px solid #ff79da;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: 2;
 }
 .loader__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
 }
 .loader__inner__img {
-  transform: scale(1.5);
+  transform: scale(2.5);
+  width: 100%;
+  float: left;
 }
-.loader .lol {
+.loader__inner__lol {
   display: flex;
 }
-.loader .lol i {
-  animation: spin 3s infinite linear;
-}
-.loader .wrapper {
+.loader__inner__lol__wrapper {
   display: flex;
   justify-content: center;
 }
-.loader .rubik-loader {
+.loader__inner__lol__wrapper--rubik-loader {
   width: 64px;
   height: 64px;
   position: absolute;
   left: 50%;
-  top: 51.5%;
-  transform: translate(-50%, -50%);
+  top: 60.5%;
+  transform: translate(-50%, -50%) scale(2.5);
   background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
   background-repeat: no-repeat;
   background-position: center;
@@ -344,12 +355,12 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-home__functioning {
-    padding: 2rem 11rem;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning {
-    padding: 3.125rem 11.25rem;
+    padding: 0;
     justify-content: center;
     margin: 0 auto;
   }
@@ -366,7 +377,9 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta {
     gap: 1.56rem;
-    max-width: 1080px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .main-home__functioning-cta h2 {
@@ -380,6 +393,7 @@ h4 {
 @media screen and (min-width: 768px) {
   .main-home__functioning-cta h2 {
     justify-content: flex-start;
+    padding: 50px 180px 0px 180px;
   }
 }
 .main-home__functioning-cta ol {
@@ -392,6 +406,13 @@ h4 {
   list-style: none;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .main-home__functioning-cta ol {
+    display: flex;
+    flex-direction: column;
+    padding: 0 180px 50px 180px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol {
     display: flex;
@@ -399,6 +420,9 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 2.28rem;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0px 180px 50px 180px;
   }
 }
 .main-home__functioning-cta ol li {
@@ -425,7 +449,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol li i {
-    left: -40px;
+    left: -10%;
   }
 }
 .main-home__functioning-cta ol li .itm-logo__activ {
@@ -440,11 +464,6 @@ h4 {
   font-weight: 500;
   line-height: normal;
   left: -5%;
-}
-@media screen and (min-width: 1025px) {
-  .main-home__functioning-cta ol li span {
-    left: -5px;
-  }
 }
 .main-home__functioning-cta ol li::before {
   content: counter(list-item);
@@ -472,17 +491,19 @@ h4 {
   justify-content: center;
   align-items: center;
   padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .main-home__restaurants {
     padding: 1.88rem 11.25rem;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants {
-    padding: 0px 180px;
+    padding: 30px 180px;
     align-items: flex-start;
     gap: 1.75rem;
     width: 100%;
@@ -528,6 +549,7 @@ h4 {
     grid-template-columns: repeat(2, 100%);
     grid-gap: 3.12rem 6.25rem;
     width: 47%;
+    max-width: 1440px;
   }
 }
 .main-home__restaurants__cards__card,
@@ -644,7 +666,6 @@ h4 {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  padding: 22px 25px;
   gap: 16px;
   background: #353535;
 }
@@ -654,7 +675,6 @@ h4 {
     justify-content: flex-end;
     align-items: flex-end;
     height: 7.125rem;
-    padding: 1.5rem 1.5625rem;
     gap: 1rem;
   }
 }
@@ -664,7 +684,6 @@ h4 {
     justify-content: flex-end;
     align-items: flex-end;
     height: 7.125rem;
-    padding: 1.875rem 1.5625rem;
     gap: 1rem;
   }
 }
