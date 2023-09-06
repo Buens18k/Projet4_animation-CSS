@@ -33,7 +33,7 @@ $color-gradient: linear-gradient(to bottom, #ff79da, #9356dc);
 
 $numbers-articles: 9;
 $anim-dur: 700ms;
-$anim-delay: $anim-dur / $numbers-articles;
+$anim-delay: calc($anim-dur / $numbers-articles);
 
 $animation-duration: 1s;
 $animation-count: 2;

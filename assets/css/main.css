@@ -355,14 +355,12 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-home__functioning {
-    padding: 0;
+    padding: 2rem 11rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning {
-    padding: 0;
-    justify-content: center;
-    margin: 0 auto;
+    padding: 50px 180px;
   }
 }
 .main-home__functioning-cta {
@@ -377,9 +375,9 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta {
     gap: 1.56rem;
-    max-width: 1440px;
-    width: 100%;
+    max-width: 1080px;
     margin: 0 auto;
+    padding: 0rem 1.25rem;
   }
 }
 .main-home__functioning-cta h2 {
@@ -388,12 +386,10 @@ h4 {
   width: 100%;
   height: auto;
   margin: 0;
-  padding-right: 162px;
 }
 @media screen and (min-width: 768px) {
   .main-home__functioning-cta h2 {
     justify-content: flex-start;
-    padding: 50px 180px 0px 180px;
   }
 }
 .main-home__functioning-cta ol {
@@ -402,16 +398,8 @@ h4 {
   gap: 1.56rem;
   margin: 0;
   padding: 0;
-  padding-left: 0.78rem;
   list-style: none;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .main-home__functioning-cta ol {
-    display: flex;
-    flex-direction: column;
-    padding: 0 180px 50px 180px;
-  }
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol {
@@ -420,9 +408,6 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 2.28rem;
-    max-width: 1440px;
-    width: 100%;
-    padding: 0px 180px 50px 180px;
   }
 }
 .main-home__functioning-cta ol li {
