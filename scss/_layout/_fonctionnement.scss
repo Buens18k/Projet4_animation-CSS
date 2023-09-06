@@ -10,9 +10,7 @@
   }
 
   @include desktop-only {
-    padding: 3.125rem 11.25rem;
-    justify-content: flex-start;
-    margin: 0 auto;
+    padding: 2rem 0;
   }
 
   &-cta {
@@ -23,6 +21,9 @@
 
     @include desktop-only {
       gap: 1.56rem;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0rem 1.25rem;
     }
 
     h2 {
@@ -54,6 +55,7 @@
       @include desktop-only {
         @include flex-center(row);
         gap: 2.28rem;
+        //max-width: 322px;
       }
 
       li {

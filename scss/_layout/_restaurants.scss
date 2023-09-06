@@ -9,9 +9,12 @@
   }
 
   @include desktop-only {
-    padding: 1.88rem 11.25rem;
+    max-width: 1080px;
+    padding: 1.88rem 1.25rem;
     align-items: flex-start;
     gap: 1.75rem;
+    margin: 0 auto;
+    width: 100%;
   }
 
   h2 {
@@ -39,15 +42,15 @@
     gap: 1.125rem;
 
     @include tablet-only {
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem 3rem;
-      width: 95%;
+      width: 100%;
     }
 
     @include desktop-only {
-      grid-template-columns: repeat(2, 100%);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 3.12rem 6.25rem;
-      width: 47%;
+      width: 100%;
     }
 
     &__card,
@@ -146,9 +149,10 @@
             fill: url(#heart-gradient);
           }
         }
-        &--black, h3, h4 {
+        &--black,
+        h3,
+        h4 {
           color: $color-black;
-  
         }
       }
 
@@ -157,7 +161,7 @@
       }
     }
   }
-  
+
   &--black h2 {
     color: #000;
   }

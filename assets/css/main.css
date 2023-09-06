@@ -242,11 +242,8 @@ h4 {
   border-radius: 1.5625rem;
   border: none;
 }
-.main-home__hero__btn button:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  transform: scale(1.05);
-}
 .main-home__hero__btn--gradient button {
+  position: relative;
   color: var(--white, #fff);
   text-align: center;
   font-family: Roboto;
@@ -254,9 +251,43 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: var(--button-gradient, linear-gradient(175deg, #ff79da 0%, #9356dc 100%));
+  overflow: hidden;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
+}
+.main-home__hero__btn--gradient button:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.main-home__hero__btn--gradient button:hover::after {
+  opacity: 1;
+}
+.main-home__hero__btn--gradient button::before {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: var(--button-gradient, linear-gradient(175deg, #ff79da 0%, #9356dc 100%));
+}
+.main-home__hero__btn--gradient button::after {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+}
+.main-home__hero__btn--gradient button span {
+  position: relative;
+  z-index: 1;
 }
 
 .main-home__functioning {
@@ -273,9 +304,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning {
-    padding: 3.125rem 11.25rem;
-    justify-content: flex-start;
-    margin: 0 auto;
+    padding: 2rem 0;
   }
 }
 .main-home__functioning-cta {
@@ -290,6 +319,9 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta {
     gap: 1.56rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0rem 1.25rem;
   }
 }
 .main-home__functioning-cta h2 {
@@ -405,9 +437,12 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants {
-    padding: 1.88rem 11.25rem;
+    max-width: 1080px;
+    padding: 1.88rem 1.25rem;
     align-items: flex-start;
     gap: 1.75rem;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 .main-home__restaurants h2 {
@@ -437,16 +472,16 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-home__restaurants__cards {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem 3rem;
-    width: 95%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants__cards {
-    grid-template-columns: repeat(2, 100%);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3.12rem 6.25rem;
-    width: 47%;
+    width: 100%;
   }
 }
 .main-home__restaurants__cards__card,
@@ -543,7 +578,9 @@ h4 {
 .main-home__restaurants__cards a__txt__heart:hover svg {
   fill: url(#heart-gradient);
 }
-.main-home__restaurants__cards__card__txt--black, .main-home__restaurants__cards__card__txt h3, .main-home__restaurants__cards__card__txt h4,
+.main-home__restaurants__cards__card__txt--black,
+.main-home__restaurants__cards__card__txt h3,
+.main-home__restaurants__cards__card__txt h4,
 .main-home__restaurants__cards a__txt--black,
 .main-home__restaurants__cards a__txt h3,
 .main-home__restaurants__cards a__txt h4 {
