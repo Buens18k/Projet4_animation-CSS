@@ -2,20 +2,15 @@
   display: flex;
   height: auto;
   width: 100%;
-  padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: $background-card;
 
   @include tablet-only {
-    padding: 2rem 11rem;
-    // padding: 0;
+    // padding: 2rem 1rem;
+    padding: 0;
   }
 
   @include desktop-only {
-    padding: 50px 180px;
-    // padding: 0;
-    // justify-content: center;
-    // margin: 0 auto;
-    
+    // padding: 3.125rem 1rem;
   }
 
   &-cta {
@@ -23,13 +18,17 @@
     gap: 1.63rem;
     width: 100%;
     height: auto;
+    padding: 3rem 1.25rem 4.25rem 1.25rem;
 
+    @include tablet-only {
+      padding: 2rem 1rem;
+      // padding: 0;
+    }
     @include desktop-only {
       gap: 1.56rem;
       max-width: 1080px;
-      // width: 100%;
       margin: 0 auto;
-      padding: 0rem 1.25rem;
+      padding: 3.125rem 1.25rem;
     }
 
     h2 {
@@ -38,12 +37,10 @@
       width: 100%;
       height: auto;
       margin: 0;
-      // padding-right: 162px;
+      padding-right: 162px;
 
       @include tablet-only {
         justify-content: flex-start;
-        // padding: 50px 180px 0px 180px;
-
       }
     }
 
@@ -52,21 +49,19 @@
       gap: 1.56rem;
       margin: 0;
       padding: 0;
-      // padding-left: 0.78rem;
+      padding-left: 0.78rem;
       list-style: none;
       width: 100%;
 
       // @include tablet-only {
       //   @include flex-column;
-        // padding: 0 180px 50px 180px;
       // }
 
       @include desktop-only {
         @include flex-center(row);
         gap: 2.28rem;
-        // max-width: 1440px;
-        // width: 100%;
-        // padding: 0px 180px 50px 180px;
+        padding-left: 0;
+        //max-width: 322px;
       }
 
       li {
@@ -91,7 +86,7 @@
           }
 
           @include desktop-only {
-            left: -10%;
+            left: -40px;
           }
         }
 
@@ -103,11 +98,9 @@
           @include relative-center;
           @include font-list;
           left: -5%;
-          // width: 100%;
-          // height: auto;
 
           @include desktop-only {
-            // left: -5px;
+            left: -5px;
           }
         }
       }

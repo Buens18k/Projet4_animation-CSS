@@ -122,13 +122,25 @@ h4 {
 .loader::after {
   content: "";
   position: absolute;
-  height: 40rem;
-  width: 40rem;
+  height: 20rem;
+  width: 20rem;
   border-right: 15px solid #9356dc;
   border-top: 15px solid #ff79da;
   border-radius: 50%;
   animation: spin 1s ease-in-out;
   animation-iteration-count: 2;
+}
+@media screen and (min-width: 768px) {
+  .loader::after {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .loader::after {
+    height: 40rem;
+    width: 40rem;
+  }
 }
 .loader__inner {
   display: flex;
@@ -137,9 +149,13 @@ h4 {
   gap: 50px;
 }
 .loader__inner__img {
-  transform: scale(2.5);
   width: 100%;
   float: left;
+}
+@media screen and (min-width: 1025px) {
+  .loader__inner__img {
+    transform: scale(2.5);
+  }
 }
 .loader__inner__lol {
   display: flex;
@@ -153,11 +169,17 @@ h4 {
   height: 64px;
   position: absolute;
   left: 50%;
-  top: 60.5%;
-  transform: translate(-50%, -50%) scale(2.5);
+  top: 53.5%;
+  transform: translate(-50%, -50%);
   background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 1025px) {
+  .loader__inner__lol__wrapper--rubik-loader {
+    top: 59.5%;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
 }
 
 .header-home {
@@ -350,17 +372,11 @@ h4 {
   display: flex;
   height: auto;
   width: 100%;
-  padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: #fff;
 }
 @media screen and (min-width: 768px) {
   .main-home__functioning {
-    padding: 2rem 11rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .main-home__functioning {
-    padding: 50px 180px;
+    padding: 0;
   }
 }
 .main-home__functioning-cta {
@@ -371,13 +387,19 @@ h4 {
   gap: 1.63rem;
   width: 100%;
   height: auto;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .main-home__functioning-cta {
+    padding: 2rem 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta {
     gap: 1.56rem;
     max-width: 1080px;
     margin: 0 auto;
-    padding: 0rem 1.25rem;
+    padding: 3.125rem 1.25rem;
   }
 }
 .main-home__functioning-cta h2 {
@@ -386,6 +408,7 @@ h4 {
   width: 100%;
   height: auto;
   margin: 0;
+  padding-right: 162px;
 }
 @media screen and (min-width: 768px) {
   .main-home__functioning-cta h2 {
@@ -398,6 +421,7 @@ h4 {
   gap: 1.56rem;
   margin: 0;
   padding: 0;
+  padding-left: 0.78rem;
   list-style: none;
   width: 100%;
 }
@@ -408,6 +432,7 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 2.28rem;
+    padding-left: 0;
   }
 }
 .main-home__functioning-cta ol li {
@@ -434,7 +459,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__functioning-cta ol li i {
-    left: -10%;
+    left: -40px;
   }
 }
 .main-home__functioning-cta ol li .itm-logo__activ {
@@ -449,6 +474,11 @@ h4 {
   font-weight: 500;
   line-height: normal;
   left: -5%;
+}
+@media screen and (min-width: 1025px) {
+  .main-home__functioning-cta ol li span {
+    left: -5px;
+  }
 }
 .main-home__functioning-cta ol li::before {
   content: counter(list-item);
@@ -475,12 +505,12 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+  padding: 3.36rem 1rem 4.13rem 1rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .main-home__restaurants {
-    padding: 1.88rem 11.25rem;
+    padding: 1.88rem 1.25rem;
     align-items: flex-start;
     gap: 1.75rem;
     width: 100%;
@@ -488,11 +518,11 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants {
-    padding: 30px 180px;
+    padding: 30px 10px;
     align-items: flex-start;
     gap: 1.75rem;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1080px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -524,16 +554,13 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-home__restaurants__cards {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem 3rem;
-    width: 95%;
   }
 }
 @media screen and (min-width: 1025px) {
   .main-home__restaurants__cards {
-    grid-template-columns: repeat(2, 100%);
     grid-gap: 3.12rem 6.25rem;
-    width: 47%;
     max-width: 1440px;
   }
 }
@@ -627,9 +654,13 @@ h4 {
 .main-home__restaurants__cards a__txt__heart {
   position: relative;
 }
-.main-home__restaurants__cards__card__txt__heart:hover svg,
-.main-home__restaurants__cards a__txt__heart:hover svg {
+.main-home__restaurants__cards__card__txt__heart:hover svg path,
+.main-home__restaurants__cards a__txt__heart:hover svg path {
   fill: url(#heart-gradient);
+}
+.main-home__restaurants__cards__card__txt__heart svg path,
+.main-home__restaurants__cards a__txt__heart svg path {
+  transition: all 5s;
 }
 .main-home__restaurants__cards__card__txt--black, .main-home__restaurants__cards__card__txt h3, .main-home__restaurants__cards__card__txt h4,
 .main-home__restaurants__cards a__txt--black,
@@ -651,6 +682,7 @@ h4 {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  padding: 22px 25px;
   gap: 16px;
   background: #353535;
 }
