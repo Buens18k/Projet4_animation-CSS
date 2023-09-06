@@ -2,17 +2,15 @@
   display: flex;
   height: auto;
   width: 100%;
-  padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: $background-card;
 
   @include tablet-only {
-    padding: 2rem 11rem;
+    // padding: 2rem 1rem;
+    padding: 0;
   }
 
   @include desktop-only {
-    padding: 3.125rem 11.25rem;
-    justify-content: flex-start;
-    margin: 0 auto;
+    // padding: 3.125rem 1rem;
   }
 
   &-cta {
@@ -20,9 +18,17 @@
     gap: 1.63rem;
     width: 100%;
     height: auto;
+    padding: 3rem 1.25rem 4.25rem 1.25rem;
 
+    @include tablet-only {
+      padding: 2rem 1rem;
+      // padding: 0;
+    }
     @include desktop-only {
       gap: 1.56rem;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 3.125rem 1.25rem;
     }
 
     h2 {
@@ -37,7 +43,7 @@
         justify-content: flex-start;
       }
     }
-    
+
     ol {
       @include flex-column;
       gap: 1.56rem;
@@ -47,16 +53,22 @@
       list-style: none;
       width: 100%;
 
+      // @include tablet-only {
+      //   @include flex-column;
+      // }
 
       @include desktop-only {
         @include flex-center(row);
         gap: 2.28rem;
+        padding-left: 0;
+        //max-width: 322px;
       }
 
       li {
         @include relative-center;
         width: 100%;
-        height: auto;
+        // height: auto;
+        height: 4.52369rem;
         border-radius: 1.25rem;
         background: $background-white-grey;
         padding: 1.6rem 2rem;
@@ -74,7 +86,7 @@
           }
 
           @include desktop-only {
-            left: -49px;
+            left: -40px;
           }
         }
 

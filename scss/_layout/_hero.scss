@@ -68,11 +68,6 @@
       height: 50px;
       border-radius: 1.5625rem;
       border: none;
-
-      &:hover{
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.7);
-        transform: scale(1.05);
-      }
     }
   }
   
@@ -84,13 +79,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    background: var(
-      --button-gradient,
-      linear-gradient(175deg, #ff79da 0%, #9356dc 100%)
-    );
-
+    background-image: $color-gradient;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    
+    &:hover{
+      background-image: linear-gradient(to bottom, lighten($color-secondary, $amount: 6%), lighten($color-primary, 6%));
+      box-shadow: 0px 4px 10px 0px lighten($color-black, 40%);
+
+    }
   }
 }

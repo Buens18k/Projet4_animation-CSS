@@ -1,17 +1,23 @@
 .main-home__restaurants {
   @include flex-center(column);
-  padding: 3.36rem 1.13rem 4.13rem 1.06rem;
+  padding: 3.36rem 1rem 4.13rem 1rem;
+  width: 100%;
 
   @include tablet-only {
-    padding: 1.88rem 11.25rem;
+    padding: 1.88rem 1.25rem;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
   }
 
   @include desktop-only {
-    padding: 1.88rem 11.25rem;
+    padding: 30px 10px;
     align-items: flex-start;
     gap: 1.75rem;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   h2 {
@@ -39,20 +45,22 @@
     gap: 1.125rem;
 
     @include tablet-only {
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem 3rem;
-      width: 95%;
+      // width: 100%;
     }
 
     @include desktop-only {
-      grid-template-columns: repeat(2, 100%);
+      // grid-template-columns: repeat(2, 100%);
       grid-gap: 3.12rem 6.25rem;
-      width: 47%;
+      // width: 47%;
+      max-width: 1440px
     }
 
     &__card,
     a {
       @include flex-column;
+      position: relative;
       align-items: center;
       width: 100%;
       height: 15.6875rem;
@@ -74,29 +82,32 @@
       }
 
       &__badge {
-        @include relative-center;
-        left: 38%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        // @include relative-center;
+        // left: 38%;
 
         @include tablet-only {
-          left: 35%;
+          // left: 35%;
         }
 
         span {
           @include relative-center;
           @include font-badge;
           padding: 7px;
-          bottom: 150px;
+          // bottom: 150px;
           text-decoration: none;
           list-style: none;
           background-color: $background-badge;
           border-radius: 3px;
 
           @include tablet-only {
-            left: 1px;
+            // left: 1px;
           }
 
           @include desktop-only {
-            left: 40%;
+            // left: 40%;
           }
         }
       }
@@ -104,7 +115,7 @@
       &__txt {
         display: flex;
         width: 100%;
-        padding: 0 10px 0 13px;
+        padding: 16px 10px 0 13px;
         height: auto;
 
         @include tablet-only {
@@ -138,13 +149,20 @@
         &__heart {
           position: relative;
 
-          &:hover svg {
-            fill: url(#heart-gradient);
+          &:hover {
+            
+            svg path{
+              fill: url(#heart-gradient);
+            }
+          }
+          
+          svg path{
+            transition: all 5s;
           }
         }
+
         &--black, h3, h4 {
           color: $color-black;
-  
         }
       }
 

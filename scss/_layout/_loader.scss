@@ -1,0 +1,77 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  // gap: 50px;
+  place-items: center;
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  animation: disappear 200ms $animation-duration * $animation-count forwards;
+  transform-origin: top;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    border-right: 15px solid #9356dc;
+    border-top: 15px solid #ff79da;
+    border-radius: 50%;
+    animation: spin $animation-duration ease-in-out;
+    animation-iteration-count: $animation-count;
+
+    @include tablet-only {
+      height: 30rem;
+      width: 30rem;
+    }
+
+    @include desktop-only {
+      height: 40rem;
+      width: 40rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    &__img {
+      width: 100%;
+      float: left;
+
+      @include desktop-only {
+        transform: scale(2.5);
+      }
+    }
+
+    &__lol {
+      display: flex;
+
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        &--rubik-loader {
+          width: 64px;
+          height: 64px;
+          position: absolute;
+          left: 50%;
+          top: 53.5%;
+          transform: translate(-50%, -50%);
+          background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
+          background-repeat: no-repeat;
+          background-position: center;
+
+          @include desktop-only {
+            top: 59.5%;
+            transform: translate(-50%, -50%) scale(2.5);
+          }
+        }
+      }
+    }
+  }
+}
