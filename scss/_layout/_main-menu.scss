@@ -80,11 +80,14 @@
       }
 
       svg {
-        width: 22px;
-        height: 21px;
+        fill: url(#heart-gradient);
+        fill-opacity: 0;
+        // transition: fill-opacity 700ms ease;
+        // animation: animation-heart 5s 0s;
 
         &:hover {
-          fill: url(#heart-gradient);
+          fill-opacity: 1;
+          animation: animation-heart 3s 0s;
         }
       }
     }
