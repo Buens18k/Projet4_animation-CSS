@@ -16,25 +16,25 @@
 }
 
 @mixin title-font {
-  font-family: $font-family;
-  font-size: $font-size-moyen;
+  font-family: $font-family-roboto;
+  font-size: $font-size-mid;
   font-style: $font-style-normal;
   font-weight: $font-weight-max;
 }
 
 @mixin font-badge {
   font-size: $font-size-badge;
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   font-style: $font-style-normal;
-  font-weight: $font-weight-search;
+  font-weight: $font-weight-mid;
   line-height: $line-height-normal;
 }
 
 @mixin font-list {
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   font-size: $font-size-mini;
   font-style: $font-style-normal;
-  font-weight: $font-weight-search;
+  font-weight: $font-weight-mid;
   line-height: $line-height-normal;
 }
 

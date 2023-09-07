@@ -1,39 +1,32 @@
-$font-family: "Roboto", sans-serif;
-$font-family-title: Shrikhand;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-shriland: Shrikhand;
 
 $font-size-badge: 0.875rem;
 $font-size-mini: 1rem;
-$font-size-moyen: 1.5rem;
+$font-size-mid: 1.5rem;
 $font-size-title: 1.875rem;
 
 $font-style-normal: normal;
-$font-weight-title: 400;
-$font-weight-search: 500;
+$font-weight-mini: 400;
+$font-weight-mid: 500;
 $font-weight-max: 700;
 $line-height-normal: normal;
 
-$background-white: white;
 $background-white-grey: #f6f6f6;
-$background-white-resto: #eaeaea;
+$background-white-grey-two: #eaeaea;
 $background-grey: #353535;
-$background-card: #fff;
-$background-badge: #99e2d0;
 
 $color-black: #000;
-$color-before: #fff;
-$color-activ: var(--primary, #9356dc);
+$color-white: #fff;
+$color-purple: #9356dc;
+$color-pink:#ff79da;
 $box-shadow: rgba(0, 0, 0, 0.15);
-$color-title-home: black;
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-switch: #99e2d0;
-$color-heart: linear-gradient(to top left, $color-secondary, $color-primary);
-$color-gradient: linear-gradient(to bottom, #ff79da, #9356dc);
 
+$color-green: #99e2d0;
 
 $numbers-articles: 9;
 $anim-dur: 700ms;
 $anim-delay: calc($anim-dur / $numbers-articles);
 
-$animation-duration: 1s;
-$animation-count: 2;
+$animation-duration-loader: 1s;
+$animation-count-loader: 2;

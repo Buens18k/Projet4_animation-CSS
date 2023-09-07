@@ -1,7 +1,12 @@
-.header-home__location, .header-home__header__title, .header-home {
+.loader__inner__lol__wrapper, .loader {
   display: flex;
   justify-content: center;
+}
+
+.header-home__location, .header-home__header, .header-home {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @keyframes slide-content {
@@ -46,6 +51,7 @@ body {
   height: auto;
   margin: 0 auto;
   background: var(--background, #f6f6f6);
+  min-width: 320px;
 }
 
 header,
@@ -174,12 +180,10 @@ h4 {
 }
 
 .loader {
-  display: flex;
-  justify-content: center;
   place-items: center;
   position: fixed;
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.95;
   height: 100vh;
   inset: 0;
   z-index: 2;
@@ -212,12 +216,18 @@ h4 {
 .loader__inner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
 .loader__inner__img {
   width: 100%;
   float: left;
+}
+@media screen and (min-width: 768px) {
+  .loader__inner__img {
+    transform: scale(1.5);
+  }
 }
 @media screen and (min-width: 1025px) {
   .loader__inner__img {
@@ -226,10 +236,6 @@ h4 {
 }
 .loader__inner__lol {
   display: flex;
-}
-.loader__inner__lol__wrapper {
-  display: flex;
-  justify-content: center;
 }
 .loader__inner__lol__wrapper--rubik-loader {
   width: 64px;
@@ -241,6 +247,12 @@ h4 {
   background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .loader__inner__lol__wrapper--rubik-loader {
+    top: 56%;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
 }
 @media screen and (min-width: 1025px) {
   .loader__inner__lol__wrapper--rubik-loader {
@@ -416,7 +428,7 @@ h4 {
   }
 }
 .main-home__functioning-cta ol li .itm-logo__activ {
-  color: var(--primary, #9356dc);
+  color: #9356dc;
 }
 .main-home__functioning-cta ol li span {
   position: relative;
@@ -442,7 +454,7 @@ h4 {
   position: absolute;
   top: 1.5rem;
   left: -1rem;
-  background-color: var(--primary, #9356dc);
+  background-color: #9356dc;
   border-radius: 50%;
   color: #fff;
   width: 1.5rem;
@@ -638,10 +650,8 @@ h4 {
   padding-bottom: 0px;
 }
 .header-home__header {
-  display: flex;
-  justify-content: center;
   border: none;
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   height: auto;
   padding: 14px 89px 13px 89px;
@@ -650,7 +660,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .header-home__header {
-    height: 45px;
+    height: 62px;
     padding: 30px 0px 31.798px 0px;
   }
 }
@@ -661,34 +671,30 @@ h4 {
   }
 }
 .header-home__header--menu {
-  justify-content: flex-start;
-  align-items: center;
   padding: 0.875rem 5.5625rem 0.8125rem 1.0625rem;
-  gap: 20%;
-}
-@media screen and (min-width: 768px) {
-  .header-home__header--menu {
-    gap: 37%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .header-home__header--menu {
-    gap: 40%;
-  }
 }
 .header-home__header__icon-back {
   display: none;
 }
 .header-home__header__icon-back--menu {
   display: flex;
+  left: 17px;
+  position: absolute;
 }
 .header-home__header__title {
+  position: relative;
+  left: 5%;
+  bottom: 6px;
   max-width: 197px;
   max-height: 36px;
-  padding: 0rem 1.1875rem 0rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .header-home__header__title {
+    left: 3%;
+  }
 }
 .header-home__header__title--black span {
-  color: black;
+  color: #000;
   text-align: center;
   font-family: Shrikhand;
   font-size: 1.875rem;
@@ -716,7 +722,7 @@ h4 {
   line-height: normal;
 }
 .header-home__location--grey {
-  background: var(--grey-2, #eaeaea);
+  background: #eaeaea;
 }
 .header-home__location--grey i {
   fill: var(--grey, #353535);
@@ -906,7 +912,7 @@ h4 {
 @media screen and (min-width: 1025px) {
   .main-menu__card {
     width: 70%;
-    padding: 51px 210px 40px 210px;
+    padding: 5% 14% 40px 14%;
   }
 }
 .main-menu__card__title {
@@ -919,8 +925,8 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-menu__card__title {
-    justify-content: center;
     gap: 20px;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -935,7 +941,7 @@ h4 {
   width: 100%;
   height: 27px;
   margin: 0;
-  padding: 0;
+  padding-left: 3%;
   color: var(--black, #101010);
   font-family: Shrikhand;
   font-size: 28px;
@@ -945,7 +951,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .main-menu__card__title h1 {
-    width: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -968,6 +974,7 @@ h4 {
   width: 100%;
   height: auto;
   animation: slide-content 1500ms ease-in-out;
+  padding: 0% 3%;
 }
 .main-menu__card__content h2 {
   width: 100%;

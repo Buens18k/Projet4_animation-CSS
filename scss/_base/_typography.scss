@@ -4,11 +4,12 @@
 
 html,
 body {
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   padding: 0;
   height: auto;
   margin: 0 auto;
   background: var(--background, #f6f6f6);
+  min-width: 320px;
 }
 
 header,

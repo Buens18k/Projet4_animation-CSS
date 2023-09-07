@@ -1,6 +1,18 @@
-%flex-center {
+%flex-content-center {
   display: flex;
   justify-content: center;
+}
+
+%flex-item-content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-start-item-center {
+  justify-content: flex-start;
   align-items: center;
 }
+
+
 
