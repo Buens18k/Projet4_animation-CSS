@@ -51,7 +51,7 @@
 
     @include desktop-only {
       grid-gap: 3.12rem 6.25rem;
-      max-width: 1440px
+      max-width: 1440px;
     }
 
     &__card,
@@ -146,19 +146,21 @@
         &__heart {
           position: relative;
 
-          &:hover {
-            
-            svg path{
-              fill: url(#heart-gradient);
+          svg {
+            fill: url(#heart-gradient);
+            fill-opacity: 0;
+            // transition: fill-opacity 700ms;
+            // animation: animation-heart 2s 0;
+            &:hover {
+              fill-opacity: 1;
+              animation: animation-heart 3s 0;
             }
-          }
-          
-          svg path{
-            transition: all 5s;
           }
         }
 
-        &--black, h3, h4 {
+        &--black,
+        h3,
+        h4 {
           color: $color-black;
         }
       }
@@ -168,7 +170,7 @@
       }
     }
   }
-  
+
   &--black h2 {
     color: #000;
   }

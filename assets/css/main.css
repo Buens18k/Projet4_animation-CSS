@@ -27,6 +27,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes animation-heart {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -166,7 +174,7 @@ h4 {
 }
 
 .loader {
-  display: flex;
+  display: none;
   justify-content: center;
   place-items: center;
   position: fixed;
@@ -691,15 +699,19 @@ h4 {
 .main-home__restaurants__cards a__txt__heart {
   position: relative;
 }
-.main-home__restaurants__cards__card__txt__heart:hover svg path,
-.main-home__restaurants__cards a__txt__heart:hover svg path {
+.main-home__restaurants__cards__card__txt__heart svg,
+.main-home__restaurants__cards a__txt__heart svg {
   fill: url(#heart-gradient);
+  fill-opacity: 0;
 }
-.main-home__restaurants__cards__card__txt__heart svg path,
-.main-home__restaurants__cards a__txt__heart svg path {
-  transition: all 5s;
+.main-home__restaurants__cards__card__txt__heart svg:hover,
+.main-home__restaurants__cards a__txt__heart svg:hover {
+  fill-opacity: 1;
+  animation: animation-heart 3s 0;
 }
-.main-home__restaurants__cards__card__txt--black, .main-home__restaurants__cards__card__txt h3, .main-home__restaurants__cards__card__txt h4,
+.main-home__restaurants__cards__card__txt--black,
+.main-home__restaurants__cards__card__txt h3,
+.main-home__restaurants__cards__card__txt h4,
 .main-home__restaurants__cards a__txt--black,
 .main-home__restaurants__cards a__txt h3,
 .main-home__restaurants__cards a__txt h4 {
@@ -942,11 +954,12 @@ h4 {
   }
 }
 .main-menu__card__title svg {
-  width: 22px;
-  height: 21px;
+  fill: url(#heart-gradient);
+  fill-opacity: 0;
 }
 .main-menu__card__title svg:hover {
-  fill: url(#heart-gradient);
+  fill-opacity: 1;
+  animation: animation-heart 3s 0s;
 }
 .main-menu__card__content {
   display: flex;
