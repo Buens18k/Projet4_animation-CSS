@@ -47,13 +47,10 @@
     @include tablet-only {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem 3rem;
-      // width: 100%;
     }
 
     @include desktop-only {
-      // grid-template-columns: repeat(2, 100%);
       grid-gap: 3.12rem 6.25rem;
-      // width: 47%;
       max-width: 1440px
     }
 
