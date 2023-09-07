@@ -149,11 +149,12 @@
           svg {
             fill: url(#heart-gradient);
             fill-opacity: 0;
-            // transition: fill-opacity 700ms;
-            // animation: animation-heart 2s 0;
-            &:hover {
+            transition: fill-opacity 700ms;
+          }
+
+          &:hover {
+            svg {
               fill-opacity: 1;
-              animation: animation-heart 3s 0;
             }
           }
         }

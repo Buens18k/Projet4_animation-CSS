@@ -82,15 +82,14 @@
       svg {
         fill: url(#heart-gradient);
         fill-opacity: 0;
-        // transition: fill-opacity 700ms ease;
-        // animation: animation-heart 5s 0s;
 
         &:hover {
           fill-opacity: 1;
-          animation: animation-heart 3s 0s;
+          animation: animation-heart 1s 0s;
         }
       }
     }
+
     &__content {
       @include flex-column;
       gap: 12px;
