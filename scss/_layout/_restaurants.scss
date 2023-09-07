@@ -152,11 +152,10 @@
             // transition: fill-opacity 700ms;
             // animation: animation-heart 2s 0;
             &:hover {
-              // fill-opacity: 1;
-              animation: animation-heart 1s 0;
+              fill-opacity: 1;
+              animation: animation-heart 3s 0;
             }
           }
-
         }
 
         &--black,

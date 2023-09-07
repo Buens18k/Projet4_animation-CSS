@@ -706,7 +706,8 @@ h4 {
 }
 .main-home__restaurants__cards__card__txt__heart svg:hover,
 .main-home__restaurants__cards a__txt__heart svg:hover {
-  animation: animation-heart 1s 0;
+  fill-opacity: 1;
+  animation: animation-heart 3s 0;
 }
 .main-home__restaurants__cards__card__txt--black,
 .main-home__restaurants__cards__card__txt h3,
