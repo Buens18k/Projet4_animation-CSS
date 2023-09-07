@@ -53,9 +53,6 @@
   }
 
   &__btn {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     margin-top: 1.69rem;
 
     @include tablet-only {
@@ -65,28 +62,6 @@
     button {
       width: 55%;
       max-width: 218px;
-      height: 50px;
-      border-radius: 1.5625rem;
-      border: none;
-    }
-  }
-  
-  &__btn--gradient button {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    background-image: $color-gradient;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    
-    &:hover{
-      background-image: linear-gradient(to bottom, lighten($color-secondary, $amount: 6%), lighten($color-primary, 6%));
-      box-shadow: 0px 4px 10px 0px lighten($color-black, 40%);
-
     }
   }
 }
