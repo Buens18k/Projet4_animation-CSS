@@ -2,7 +2,7 @@
   display: flex;
   height: auto;
   width: 100%;
-  background: $background-card;
+  background: $color-white;
 
   @include tablet-only {
     // padding: 2rem 1rem;
@@ -91,7 +91,7 @@
         }
 
         .itm-logo__activ {
-          color: $color-activ;
+          color: $color-purple;
         }
 
         span {
@@ -111,9 +111,9 @@
         position: absolute;
         top: 1.5rem;
         left: -1rem;
-        background-color: $color-activ;
+        background-color: $color-purple;
         border-radius: 50%;
-        color: $color-before;
+        color: $color-white;
         width: 1.5rem;
         height: 1.5rem;
       }
