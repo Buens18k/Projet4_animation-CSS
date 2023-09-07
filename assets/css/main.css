@@ -703,11 +703,11 @@ h4 {
 .main-home__restaurants__cards a__txt__heart svg {
   fill: url(#heart-gradient);
   fill-opacity: 0;
-  transition: fill-opacity 700ms;
 }
-.main-home__restaurants__cards__card__txt__heart:hover svg,
-.main-home__restaurants__cards a__txt__heart:hover svg {
+.main-home__restaurants__cards__card__txt__heart svg :hover,
+.main-home__restaurants__cards a__txt__heart svg :hover {
   fill-opacity: 1;
+  animation: animation-heart 1s 0s;
 }
 .main-home__restaurants__cards__card__txt--black,
 .main-home__restaurants__cards__card__txt h3,
@@ -957,7 +957,7 @@ h4 {
   fill: url(#heart-gradient);
   fill-opacity: 0;
 }
-.main-menu__card__title svg:hover {
+.main-menu__card__title svg :hover {
   fill-opacity: 1;
   animation: animation-heart 1s 0s;
 }
