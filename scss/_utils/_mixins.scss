@@ -36,11 +36,29 @@
   line-height: $line-height-normal;
 }
 
+@mixin style-h1-menu {
+  color: var(--black, #101010);
+  font-family: $font-family-shriland;
+  font-size: 28px;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-mini;
+  line-height: $line-height-normal;
+}
+
 @mixin style-h2 {
   font-family: $font-family-roboto;
   font-size: $font-size-mid;
   font-style: $font-style-normal;
   font-weight: $font-weight-max;
+}
+
+@mixin style-h2-menu {
+  color: $color-black;
+  font-family: $font-family-roboto;
+  font-size: 16px;
+  font-style: $font-style-normal;
+  font-weight: 300;
+  line-height: $line-height-normal;
 }
 
 @mixin style-h3 {
@@ -51,10 +69,28 @@
   line-height: $line-height-normal;
 }
 
+@mixin style-h3-menu {
+  color: $color-black;
+  font-family: $font-family-roboto;
+  font-size: $font-size-p;
+  font-weight: $font-weight-mid;
+  font-style: $font-style-normal;
+  line-height: $line-height-normal;
+}
+
 @mixin style-h4 {
   font-family: $font-family-roboto;
   font-size: $font-size-h4;
   font-weight: 300;
+  font-style: $font-style-normal;
+  line-height: $line-height-normal;
+}
+
+@mixin style-h4-menu {
+  color: $color-black;
+  font-family: $font-family-roboto;
+  font-size: $font-size-h4-mini;
+  font-weight: $font-weight-extra-mini;
   font-style: $font-style-normal;
   line-height: $line-height-normal;
 }
