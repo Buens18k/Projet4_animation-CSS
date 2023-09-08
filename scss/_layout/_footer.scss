@@ -5,7 +5,7 @@
   width: 100%;
   padding: 22px 25px;
   gap: 16px;
-  background: $background-grey;
+  background: $color-grey;
 
   @include tablet-only {
     display: flex;
