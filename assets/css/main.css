@@ -548,6 +548,7 @@ h4 {
   position: absolute;
   right: 10px;
   top: 10px;
+  text-decoration: none;
 }
 .main-home__restaurants__cards__card__badge span,
 .main-home__restaurants__cards a__badge span {
@@ -589,10 +590,10 @@ h4 {
 .main-home__restaurants__cards a__txt__title {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   width: 100%;
   height: auto;
   margin: 0;
+  text-decoration: none;
   gap: 0.31rem;
 }
 .main-home__restaurants__cards__card__txt__title h3,

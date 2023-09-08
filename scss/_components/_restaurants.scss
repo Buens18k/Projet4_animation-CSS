@@ -40,8 +40,7 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    width: 100%;
-    height: auto;
+    @include dimension-auto;
     gap: 1.125rem;
 
     @include tablet-only {
@@ -82,30 +81,18 @@
         position: absolute;
         right: 10px;
         top: 10px;
-        // @include relative-center;
-        // left: 38%;
+        text-decoration: none;
 
-        @include tablet-only {
-          // left: 35%;
-        }
 
         span {
           @include relative-center;
           @include font-badge;
           padding: 7px;
-          // bottom: 150px;
           text-decoration: none;
           list-style: none;
           background-color: $color-green;
           border-radius: 3px;
 
-          @include tablet-only {
-            // left: 1px;
-          }
-
-          @include desktop-only {
-            // left: 40%;
-          }
         }
       }
 
@@ -127,10 +114,9 @@
 
         &__title {
           @include flex-column;
-          text-decoration: none;
-          width: 100%;
-          height: auto;
+          @include dimension-auto;
           margin: 0;
+          text-decoration: none;
           gap: 0.31rem;
 
           h3 {
@@ -172,6 +158,6 @@
   }
 
   &--black h2 {
-    color: #000;
+    color: $color-black;
   }
 }
