@@ -649,7 +649,6 @@ h4 {
   width: 100%;
   padding-bottom: 0px;
   background-color: #fff;
-  background-size: cover;
 }
 @media screen and (min-width: 1025px) {
   .header-home {

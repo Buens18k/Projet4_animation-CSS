@@ -1,7 +1,7 @@
 .main-menu {
   @include flex-column;
   height: auto;
-  background: #fff;
+  background: $color-white;
 
   &__picture {
     display: flex;
@@ -29,12 +29,10 @@
     margin-top: -40px;
 
     @include tablet-only {
-      // width: 70%;
       padding: 51px 110px 40px 110px;
     }
 
     @include desktop-only {
-      // width: 70%;
       padding: 51px 192px 40px 192px;
       max-width: 1055px;
     }
@@ -48,7 +46,6 @@
       height: auto;
 
       @include tablet-only {
-        // justify-content: center;
         gap: 20px;
         padding: 0;
       }

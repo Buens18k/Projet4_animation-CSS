@@ -3,7 +3,6 @@
   width: 100%;
   padding-bottom: 0px;
   background-color: $color-white;
-  background-size: cover;
 
   @include desktop-only {
     width: 100%;
@@ -29,19 +28,14 @@
       box-shadow: none;
       
     }
+
     // Page-Menu
     &--menu {
       justify-content: flex-start;
       width: 100%;
       padding: 14px 0px 13px 17px;
-      // gap: 20%;
-
-      @include tablet-only {
-        // gap: 37%;
-      }
 
       @include desktop-only {
-        // gap: 40%;
         max-width: 90rem;
         margin: auto;
       }
@@ -55,24 +49,15 @@
       // Page-Menu
       &--menu {
         display: flex;
-        // width: 100%;
-        // left: 17px;
-        // position: relative;
+
       }
     }
 
     &__title {
-      // position: relative;
-      // left: 5%;
-      // bottom: 6px;
       @extend %flex-item-content-center;
       width: 100%;
       height: 36px;
-      // width: 100%;
-      // padding: 0rem 1.1875rem 0rem 1rem;
-      @include tablet-only {
-        // left: 3%;
-      }
+
     }
 
     &__title--black span {
