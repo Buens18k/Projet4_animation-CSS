@@ -1,26 +1,25 @@
 .loader {
-  display: flex;
-  justify-content: center;
-  // gap: 50px;
+  @extend %flex-content-center;
   place-items: center;
   position: fixed;
-  background-color: #fff;
-  opacity: 0.9;
+  background-color: $color-white;
+  opacity: 0.95;
   height: 100vh;
   inset: 0;
   z-index: 2;
-  animation: disappear 200ms $animation-duration * $animation-count forwards;
+  animation: disappear 200ms $animation-duration-loader * $animation-count-loader forwards;
   transform-origin: top;
+
   &::after {
     content: "";
     position: absolute;
     height: 20rem;
     width: 20rem;
-    border-right: 15px solid #9356dc;
-    border-top: 15px solid #ff79da;
+    border-right: 15px solid $color-purple;
+    border-top: 15px solid $color-pink;
     border-radius: 50%;
-    animation: spin $animation-duration ease-in-out;
-    animation-iteration-count: $animation-count;
+    animation: spin $animation-duration-loader ease-in-out;
+    animation-iteration-count: $animation-count-loader;
 
     @include tablet-only {
       height: 30rem;
@@ -34,14 +33,16 @@
   }
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-center(column);
     gap: 50px;
 
     &__img {
       width: 100%;
       float: left;
+
+      @include tablet-only {
+        transform: scale(1.5);
+      }
 
       @include desktop-only {
         transform: scale(2.5);
@@ -52,8 +53,7 @@
       display: flex;
 
       &__wrapper {
-        display: flex;
-        justify-content: center;
+        @extend %flex-content-center;
 
         &--rubik-loader {
           width: 64px;
@@ -65,6 +65,11 @@
           background-image: url(http://i.giphy.com/3og0ISeflb7vrNzy2A.gif);
           background-repeat: no-repeat;
           background-position: center;
+
+          @include tablet-only {
+            top: 56%;
+            transform: translate(-50%, -50%) scale(1.5);
+          }
 
           @include desktop-only {
             top: 59.5%;

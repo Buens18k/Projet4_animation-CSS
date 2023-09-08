@@ -40,8 +40,7 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    width: 100%;
-    height: auto;
+    @include dimension-auto;
     gap: 1.125rem;
 
     @include tablet-only {
@@ -51,7 +50,7 @@
 
     @include desktop-only {
       grid-gap: 3.12rem 6.25rem;
-      max-width: 1440px
+      max-width: 1440px;
     }
 
     &__card,
@@ -62,7 +61,7 @@
       width: 100%;
       height: 15.6875rem;
       border-radius: 0.9375rem;
-      background: $background-card;
+      background: $color-white;
       z-index: 0;
       margin-bottom: 0;
       /* Shadow/Card */
@@ -82,30 +81,18 @@
         position: absolute;
         right: 10px;
         top: 10px;
-        // @include relative-center;
-        // left: 38%;
+        text-decoration: none;
 
-        @include tablet-only {
-          // left: 35%;
-        }
 
         span {
           @include relative-center;
           @include font-badge;
           padding: 7px;
-          // bottom: 150px;
           text-decoration: none;
           list-style: none;
-          background-color: $background-badge;
+          background-color: $color-green;
           border-radius: 3px;
 
-          @include tablet-only {
-            // left: 1px;
-          }
-
-          @include desktop-only {
-            // left: 40%;
-          }
         }
       }
 
@@ -127,10 +114,9 @@
 
         &__title {
           @include flex-column;
-          text-decoration: none;
-          width: 100%;
-          height: auto;
+          @include dimension-auto;
           margin: 0;
+          text-decoration: none;
           gap: 0.31rem;
 
           h3 {
@@ -146,19 +132,21 @@
         &__heart {
           position: relative;
 
-          &:hover {
-            
-            svg path{
-              fill: url(#heart-gradient);
+          svg {
+            fill: url(#heart-gradient);
+            fill-opacity: 0;
+
+            :hover{
+              fill-opacity: 1;
+              animation: animation-heart 1s 0s;
+
             }
-          }
-          
-          svg path{
-            transition: all 5s;
           }
         }
 
-        &--black, h3, h4 {
+        &--black,
+        h3,
+        h4 {
           color: $color-black;
         }
       }
@@ -168,8 +156,8 @@
       }
     }
   }
-  
+
   &--black h2 {
-    color: #000;
+    color: $color-black;
   }
 }

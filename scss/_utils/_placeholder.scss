@@ -1,6 +1,19 @@
-%flex-center {
+%flex-content-center {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
+%flex-item-content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%reset-padding-margin {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 

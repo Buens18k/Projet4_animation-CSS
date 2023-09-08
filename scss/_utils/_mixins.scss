@@ -1,3 +1,8 @@
+@mixin dimension-auto {
+  width: 100%;
+  height: auto;
+}
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -15,40 +20,62 @@
   text-align: center;
 }
 
-@mixin title-font {
-  font-family: $font-family;
-  font-size: $font-size-moyen;
+@mixin paragraph-style {
+  font-family: $font-family-roboto;
+  font-size: $font-size-p;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-extra-mini;
+  line-height: $line-height-normal;
+}
+
+@mixin style-h1 {
+  font-family: $font-family-roboto;
+  font-size: $font-size-mid;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-max;
+  line-height: $line-height-normal;
+}
+
+@mixin style-h2 {
+  font-family: $font-family-roboto;
+  font-size: $font-size-mid;
   font-style: $font-style-normal;
   font-weight: $font-weight-max;
 }
 
+@mixin style-h3 {
+  font-family: $font-family-roboto;
+  font-size: $font-size-p;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-max;
+  line-height: $line-height-normal;
+}
+
+@mixin style-h4 {
+  font-family: $font-family-roboto;
+  font-size: $font-size-h4;
+  font-weight: 300;
+  font-style: $font-style-normal;
+  line-height: $line-height-normal;
+}
+
 @mixin font-badge {
   font-size: $font-size-badge;
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   font-style: $font-style-normal;
-  font-weight: $font-weight-search;
+  font-weight: $font-weight-mid;
   line-height: $line-height-normal;
 }
 
 @mixin font-list {
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   font-size: $font-size-mini;
   font-style: $font-style-normal;
-  font-weight: $font-weight-search;
+  font-weight: $font-weight-mid;
   line-height: $line-height-normal;
 }
 
 // ANIMATION
-
-// @mixin heart-anim {
-//   background: linear-gradient(to top left, $color-primary, $color-secondary);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   -moz-background-clip: text;
-//   -moz-text-fill-color: transparent;
-//   font-weight: 900;
-// }
 
 @mixin boucle-articles {
   @for $i from 1 through $numbers-articles {

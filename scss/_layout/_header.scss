@@ -1,73 +1,73 @@
 .header-home {
-  @extend %flex-center;
+  @extend %flex-item-content-center;
   width: 100%;
   padding-bottom: 0px;
+  background-color: $color-white;
+
+  @include desktop-only {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
   &__header {
-    display: flex;
-    justify-content: center;
+    @extend %flex-item-content-center;
+    @include dimension-auto;
     border: none;
-    background-color: $background-white;
-    width: 100%;
-    height: auto;
-    padding: 14px 89px 13px 89px;
     z-index: 1;
     box-shadow: 0px 2px 4px 0px $box-shadow;
 
     @include tablet-only {
-      height: 45px;
-      padding: 30px 0px 31.798px 0px; 
+      height: 62px;
     }
 
     @include desktop-only {
       height: 90px;
-      padding: 30px 0px 31.798px 0px; 
+
+      box-shadow: none;
     }
+
     // Page-Menu
     &--menu {
       justify-content: flex-start;
-      align-items: center;
-      padding: 0.875rem 5.5625rem 0.8125rem 1.0625rem;
-      gap: 20%;
-
-      @include tablet-only{
-        gap: 37%;
-      }
+      width: 100%;
+      padding: 14px 0px 13px 17px;
 
       @include desktop-only {
-        gap: 40%;
+        max-width: 1440px;
+        margin: auto;
       }
     }
 
     &__icon-back {
       display: none;
+      width: 30px;
+      height: 30px;
 
       // Page-Menu
-      &--menu{
+      &--menu {
         display: flex;
-      
       }
     }
 
     &__title {
-      @extend %flex-center;
-      max-width: 197px;
-      max-height: 36px;
-      padding: 0rem 1.1875rem 0rem 1rem;
+      @extend %flex-item-content-center;
+      width: 100%;
+      height: 36px;
     }
 
-    &__title--black span{
-      color: $color-title-home;
+    &__title--black span {
+      color: $color-black;
       text-align: center;
-      font-family: $font-family-title;
+      font-family: $font-family-shriland;
       font-size: $font-size-title;
       font-style: $font-style-normal;
-      font-weight: $font-weight-title;
+      font-weight: $font-weight-mini;
       line-height: $line-height-normal;
     }
   }
   &__location {
-    @extend %flex-center;
+    @extend %flex-item-content-center;
     width: 100%;
     height: 50px;
 
@@ -81,25 +81,24 @@
       }
 
       &--grey span {
-        font-family: $font-family;
+        font-family: $font-family-roboto;
         font-size: $font-size-mini;
         font-style: $font-style-normal;
-        font-weight: $font-weight-search;
+        font-weight: $font-weight-mid;
         line-height: $line-height-normal;
       }
     }
   }
 
   &__location--grey {
-    background: var(--grey-2, #eaeaea);
+    background: $background-white-grey-two;
 
-    i{
-        fill: var(--grey, #353535);
+    i {
+      fill: $color-grey;
     }
 
-    span{
-      color: var(--grey, #353535);
+    span {
+      color: $color-grey;
     }
   }
 }
-

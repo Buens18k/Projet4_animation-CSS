@@ -4,15 +4,15 @@
 @import "./_utils/_maps";
 @import "./_utils/_keyframes";
 
-@import "./_components/_btn";
-
 @import "./_base/_typography";
-@import "./_layout/_loader";
+
+@import "./_components/_btn";
+@import "./_components/_loader";
+@import "./_components/_hero";
+@import "./_components/_fonctionnement";
+@import "./_components/_restaurants";
 
 @import "./_layout/_header";
-@import "./_layout/_hero";
-@import "./_layout/_fonctionnement";
-@import "./_layout/_restaurants";
 @import "./_layout/_footer";
 
-@import "./_layout/_main-menu"
+@import "./_pages/_main-menu";

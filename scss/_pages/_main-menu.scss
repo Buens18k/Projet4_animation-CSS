@@ -1,7 +1,7 @@
 .main-menu {
   @include flex-column;
   height: auto;
-  background: #fff;
+  background: $color-white;
 
   &__picture {
     display: flex;
@@ -29,13 +29,12 @@
     margin-top: -40px;
 
     @include tablet-only {
-      width: 70%;
       padding: 51px 110px 40px 110px;
     }
 
     @include desktop-only {
-      width: 70%;
-      padding: 51px 210px 40px 210px;
+      padding: 51px 192px 40px 192px;
+      max-width: 1055px;
     }
 
     &__title {
@@ -47,8 +46,8 @@
       height: auto;
 
       @include tablet-only {
-        justify-content: center;
         gap: 20px;
+        padding: 0;
       }
 
       @include desktop-only {
@@ -62,7 +61,7 @@
         width: 100%;
         height: 27px;
         margin: 0;
-        padding: 0;
+        padding-left: 3%;
         color: var(--black, #101010);
         font-family: Shrikhand;
         font-size: 28px;
@@ -71,7 +70,7 @@
         line-height: normal;
 
         @include tablet-only {
-          width: auto;
+          width: 100%;
         }
 
         @include desktop-only {
@@ -80,20 +79,23 @@
       }
 
       svg {
-        width: 22px;
-        height: 21px;
+        fill: url(#heart-gradient);
+        fill-opacity: 0;
 
-        &:hover {
-          fill: url(#heart-gradient);
+        :hover {
+          fill-opacity: 1;
+          animation: animation-heart 1s 0s;
         }
       }
     }
+
     &__content {
       @include flex-column;
       gap: 12px;
       width: 100%;
       height: auto;
       animation: slide-content 1500ms ease-in-out;
+      padding: 0% 3%;
 
       h2 {
         width: 100%;
@@ -190,7 +192,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $color-switch;
+            background: $color-green;
             height: 100%;
             width: 5.3rem;
             margin-right: -5.3rem;
@@ -201,7 +203,7 @@
               background: #fff;
               border-radius: 90%;
               transform: scale(1.3);
-              color: $color-switch;
+              color: $color-green;
             }
           }
         }
