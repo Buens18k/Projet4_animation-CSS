@@ -1,17 +1,8 @@
 .main-home__functioning {
   display: flex;
-  height: auto;
-  width: 100%;
+  @include dimension-auto;
   background: $color-white;
-
-  @include tablet-only {
-    // padding: 2rem 1rem;
-    padding: 0;
-  }
-
-  @include desktop-only {
-    // padding: 3.125rem 1rem;
-  }
+  padding: 0;
 
   &-cta {
     @include flex-center(column);
@@ -22,8 +13,8 @@
 
     @include tablet-only {
       padding: 2rem 1rem;
-      // padding: 0;
     }
+
     @include desktop-only {
       gap: 1.56rem;
       max-width: 1080px;
@@ -34,8 +25,7 @@
     h2 {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
-      height: auto;
+      @include dimension-auto;
       margin: 0;
       padding-right: 162px;
 
@@ -47,27 +37,20 @@
     ol {
       @include flex-column;
       gap: 1.56rem;
-      margin: 0;
-      padding: 0;
+      @extend %reset-padding-margin;
       padding-left: 0.78rem;
       list-style: none;
       width: 100%;
-
-      // @include tablet-only {
-      //   @include flex-column;
-      // }
 
       @include desktop-only {
         @include flex-center(row);
         gap: 2.28rem;
         padding-left: 0;
-        //max-width: 322px;
       }
 
       li {
         @include relative-center;
         width: 100%;
-        // height: auto;
         height: 4.52369rem;
         border-radius: 1.25rem;
         background: $background-white-grey;
@@ -122,6 +105,6 @@
 
   &-cta--title-black h2,
   span {
-    color: #000;
+    color: $color-black;
   }
 }

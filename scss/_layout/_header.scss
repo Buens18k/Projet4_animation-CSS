@@ -12,9 +12,8 @@
 
   &__header {
     @extend %flex-item-content-center;
+    @include dimension-auto;
     border: none;
-    width: 100%;
-    height: auto;
     z-index: 1;
     box-shadow: 0px 2px 4px 0px $box-shadow;
 
@@ -26,7 +25,6 @@
       height: 90px;
 
       box-shadow: none;
-      
     }
 
     // Page-Menu
@@ -36,7 +34,7 @@
       padding: 14px 0px 13px 17px;
 
       @include desktop-only {
-        max-width: 90rem;
+        max-width: 1440px;
         margin: auto;
       }
     }
@@ -49,7 +47,6 @@
       // Page-Menu
       &--menu {
         display: flex;
-
       }
     }
 
@@ -57,7 +54,6 @@
       @extend %flex-item-content-center;
       width: 100%;
       height: 36px;
-
     }
 
     &__title--black span {
@@ -98,11 +94,11 @@
     background: $background-white-grey-two;
 
     i {
-      fill: var(--grey, #353535);
+      fill: $color-grey;
     }
 
     span {
-      color: var(--grey, #353535);
+      color: $color-grey;
     }
   }
 }

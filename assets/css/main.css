@@ -1,12 +1,17 @@
-.loader__inner__lol__wrapper, .loader {
+.main-home__hero__title, .loader__inner__lol__wrapper, .loader {
   display: flex;
   justify-content: center;
 }
 
-.header-home__location, .header-home__header__title, .header-home__header, .header-home {
+.header-home__location, .header-home__header__title, .header-home__header, .header-home, .main-home__hero__txt {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-home__cta__nav__lists, .main-home__functioning-cta ol, h4, h3, p {
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes slide-content {
@@ -48,9 +53,9 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
-  height: auto;
   margin: 0 auto;
-  background: var(--background, #f6f6f6);
+  height: auto;
+  background: #f6f6f6;
   min-width: 320px;
 }
 
@@ -66,17 +71,16 @@ a {
 
 p {
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding: 0;
-  margin: 0;
 }
+
 h1 {
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -101,9 +105,7 @@ h2 {
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -111,12 +113,10 @@ h3 {
 }
 
 h4 {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 1.0625rem;
-  font-style: normal;
   font-weight: 300;
+  font-style: normal;
   line-height: normal;
 }
 
@@ -284,11 +284,9 @@ h4 {
   }
 }
 .main-home__hero__title {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   width: 100%;
   height: auto;
+  align-items: flex-end;
 }
 @media screen and (min-width: 768px) {
   .main-home__hero__title {
@@ -306,9 +304,6 @@ h4 {
   color: #000;
 }
 .main-home__hero__txt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 2.875rem;
 }
@@ -318,7 +313,7 @@ h4 {
   }
 }
 .main-home__hero__txt--black p {
-  color: var(--grey, #353535);
+  color: #353535;
 }
 .main-home__hero__btn {
   margin-top: 1.69rem;
@@ -335,14 +330,10 @@ h4 {
 
 .main-home__functioning {
   display: flex;
-  height: auto;
   width: 100%;
+  height: auto;
   background: #fff;
-}
-@media screen and (min-width: 768px) {
-  .main-home__functioning {
-    padding: 0;
-  }
+  padding: 0;
 }
 .main-home__functioning-cta {
   display: flex;
@@ -384,8 +375,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1.56rem;
-  margin: 0;
-  padding: 0;
   padding-left: 0.78rem;
   list-style: none;
   width: 100%;
@@ -559,6 +548,7 @@ h4 {
   position: absolute;
   right: 10px;
   top: 10px;
+  text-decoration: none;
 }
 .main-home__restaurants__cards__card__badge span,
 .main-home__restaurants__cards a__badge span {
@@ -600,10 +590,10 @@ h4 {
 .main-home__restaurants__cards a__txt__title {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   width: 100%;
   height: auto;
   margin: 0;
+  text-decoration: none;
   gap: 0.31rem;
 }
 .main-home__restaurants__cards__card__txt__title h3,
@@ -658,9 +648,9 @@ h4 {
   }
 }
 .header-home__header {
-  border: none;
   width: 100%;
   height: auto;
+  border: none;
   z-index: 1;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -682,7 +672,7 @@ h4 {
 }
 @media screen and (min-width: 1025px) {
   .header-home__header--menu {
-    max-width: 90rem;
+    max-width: 1440px;
     margin: auto;
   }
 }
@@ -730,10 +720,10 @@ h4 {
   background: #eaeaea;
 }
 .header-home__location--grey i {
-  fill: var(--grey, #353535);
+  fill: #353535;
 }
 .header-home__location--grey span {
-  color: var(--grey, #353535);
+  color: #353535;
 }
 
 .footer-home {
@@ -747,15 +737,6 @@ h4 {
   background: #353535;
 }
 @media screen and (min-width: 768px) {
-  .footer-home {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 7.125rem;
-    gap: 1rem;
-  }
-}
-@media screen and (min-width: 1025px) {
   .footer-home {
     display: flex;
     justify-content: flex-end;
@@ -821,7 +802,6 @@ h4 {
   flex-direction: column;
   list-style: none;
   align-items: flex-start;
-  padding: 0;
   gap: 0.44rem;
 }
 @media screen and (min-width: 768px) {
@@ -829,7 +809,6 @@ h4 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0;
     gap: 1.44rem;
   }
 }
@@ -861,7 +840,7 @@ h4 {
 .footer-home__cta__nav__lists a span,
 .footer-home__cta__nav__lists a svg,
 .footer-home__cta__nav__lists a a {
-  color: var(--white, #fff);
+  color: #fff;
 }
 .footer-home__cta__nav__lists i {
   display: flex;

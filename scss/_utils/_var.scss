@@ -5,25 +5,31 @@ $font-size-badge: 0.875rem;
 $font-size-mini: 1rem;
 $font-size-mid: 1.5rem;
 $font-size-title: 1.875rem;
+$font-size-p: 1.125rem;
+$font-size-h4: 1.0625rem;
 
 $font-style-normal: normal;
+
+$font-weight-extra-mini: 300;
 $font-weight-mini: 400;
 $font-weight-mid: 500;
 $font-weight-max: 700;
+
 $line-height-normal: normal;
 
 $background-white-grey: #f6f6f6;
 $background-white-grey-two: #eaeaea;
-$background-grey: #353535;
 
+$color-grey: #353535;
 $color-black: #000;
 $color-white: #fff;
 $color-purple: #9356dc;
 $color-pink:#ff79da;
-$box-shadow: rgba(0, 0, 0, 0.15);
-
 $color-green: #99e2d0;
 
+$box-shadow: rgba(0, 0, 0, 0.15);
+
+// Animation Loader
 $numbers-articles: 9;
 $anim-dur: 700ms;
 $anim-delay: calc($anim-dur / $numbers-articles);
