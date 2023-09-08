@@ -29,13 +29,14 @@
     margin-top: -40px;
 
     @include tablet-only {
-      width: 70%;
+      // width: 70%;
       padding: 51px 110px 40px 110px;
     }
 
     @include desktop-only {
-      width: 70%;
-      padding: 5% 14% 40px 14%;
+      // width: 70%;
+      padding: 51px 192px 40px 192px;
+      max-width: 1055px;
     }
 
     &__title {
