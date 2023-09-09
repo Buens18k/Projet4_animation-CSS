@@ -74,7 +74,8 @@
         border-radius: 0.9375rem 0.9375rem 0rem 0rem;
         margin: 0;
         padding: 0;
-        object-fit: cover;
+        object-fit: fill;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
       }
 
       &__badge {
@@ -82,7 +83,6 @@
         right: 10px;
         top: 10px;
         text-decoration: none;
-
 
         span {
           @include relative-center;
@@ -92,7 +92,6 @@
           list-style: none;
           background-color: $color-green;
           border-radius: 3px;
-
         }
       }
 
@@ -136,10 +135,9 @@
             fill: url(#heart-gradient);
             fill-opacity: 0;
 
-            :hover{
+            :hover {
               fill-opacity: 1;
               animation: animation-heart 1s 0s;
-
             }
           }
         }

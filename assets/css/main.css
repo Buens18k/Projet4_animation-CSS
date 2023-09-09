@@ -541,7 +541,8 @@ h4 {
   border-radius: 0.9375rem 0.9375rem 0rem 0rem;
   margin: 0;
   padding: 0;
-  object-fit: cover;
+  object-fit: fill;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .main-home__restaurants__cards__card__badge,
 .main-home__restaurants__cards a__badge {
@@ -867,12 +868,18 @@ h4 {
   display: flex;
   width: 100%;
   height: auto;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .main-menu__picture img {
   object-fit: cover;
   height: 275px;
   width: 100%;
   z-index: 1;
+}
+@media screen and (min-width: 1025px) {
+  .main-menu__picture img {
+    height: 383px;
+  }
 }
 .main-menu__card {
   display: flex;
