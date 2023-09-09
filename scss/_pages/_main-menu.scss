@@ -9,16 +9,13 @@
     height: auto;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     img {
-      // object-fit: cover;
       object-fit: cover;
       height: 275px;
       width: 100%;
       z-index: 1;
-      // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 
       @include desktop-only {
         height: 383px;
-        // object-fit: fill;
       }
     }
   }
