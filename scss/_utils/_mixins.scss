@@ -112,11 +112,13 @@
 }
 
 // ANIMATION
-
-@mixin boucle-articles {
-  @for $i from 1 through $numbers-articles {
-    &--#{$i}{
-      animation-delay: $anim-delay* $i;
+// pour chaque articles dans le tableau $numbers
+@mixin boucle-anime-articles ($numbers, $delay){
+  @for $i from 1 through $numbers {
+    &--#{$i} {
+      // calcul delai de proportion au nombred'articles 
+      // et à l'index de chaque article
+      animation-delay: calc($delay / $numbers) * $i;
     }
   }
 }
