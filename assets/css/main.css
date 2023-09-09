@@ -541,7 +541,8 @@ h4 {
   border-radius: 0.9375rem 0.9375rem 0rem 0rem;
   margin: 0;
   padding: 0;
-  object-fit: cover;
+  object-fit: fill;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .main-home__restaurants__cards__card__badge,
 .main-home__restaurants__cards a__badge {
@@ -867,12 +868,18 @@ h4 {
   display: flex;
   width: 100%;
   height: auto;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .main-menu__picture img {
   object-fit: cover;
   height: 275px;
   width: 100%;
   z-index: 1;
+}
+@media screen and (min-width: 1025px) {
+  .main-menu__picture img {
+    height: 383px;
+  }
 }
 .main-menu__card {
   display: flex;
@@ -1017,6 +1024,36 @@ h4 {
 }
 .main-menu__card__content__article--9 {
   animation-delay: 700ms;
+}
+.main-menu__card__content__article--1 {
+  animation-delay: 90ms;
+}
+.main-menu__card__content__article--2 {
+  animation-delay: 180ms;
+}
+.main-menu__card__content__article--3 {
+  animation-delay: 270ms;
+}
+.main-menu__card__content__article--4 {
+  animation-delay: 360ms;
+}
+.main-menu__card__content__article--5 {
+  animation-delay: 450ms;
+}
+.main-menu__card__content__article--6 {
+  animation-delay: 540ms;
+}
+.main-menu__card__content__article--7 {
+  animation-delay: 630ms;
+}
+.main-menu__card__content__article--8 {
+  animation-delay: 720ms;
+}
+.main-menu__card__content__article--9 {
+  animation-delay: 810ms;
+}
+.main-menu__card__content__article--10 {
+  animation-delay: 900ms;
 }
 .main-menu__card__content__article:hover .main-menu__card__content__article__switch__valid {
   margin-right: 0;
