@@ -74,8 +74,7 @@
         border-radius: 0.9375rem 0.9375rem 0rem 0rem;
         margin: 0;
         padding: 0;
-        object-fit: fill;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        object-fit: cover;
       }
 
       &__badge {
