@@ -30,10 +30,9 @@ $color-green: #99e2d0;
 
 $box-shadow: rgba(0, 0, 0, 0.15);
 
-// Animation Menu
-$numbers-articles: 9;
-$anim-dur: 700ms;
-$anim-delay: calc($anim-dur / $numbers-articles);
+// Animation 
+// à renseigner le nbres d'articles et le delay
+$numbers-articles: (9, 700ms), (10, 900ms);
 
 // Animation Loader
 $animation-duration-loader: 1s;
