@@ -116,8 +116,7 @@
 @mixin boucle-anime-articles ($numbers, $delay){
   @for $i from 1 through $numbers {
     &--#{$i} {
-      // calcul delai de proportion au nombred'articles 
-      // et à l'index de chaque article
+      // calcul delai d'animation progessive et proportionnel
       animation-delay: calc($delay / $numbers) * $i;
     }
   }
