@@ -24,5 +24,45 @@ Pièce jointe :
 Vous avez désormais tous les éléments pour construire le site. Vous vous lancez dans cette nouvelle aventure !
 </pre>
 
+## <u>***Compatibilité***</u> ##
+La cible étant les personnes connectées et pressées, le site est donc développé en utilisant l’approche ***Mobile-first***.<br>
+Le site est donc intégré en suivant les maquettes mobile, puis le responsive suit pour les tablettes et ordinateurs en suivant les maquettes données par le designer.<br>
+● L’ensemble du site est responsive sur mobile, tablette et desktop.<br>
+● Les pages sont passer à la validation W3C en HTML et CSS.<br>
+● Le site est parfaitement compatible avec les dernières versions desktop de Chrome et Firefox.
+
+## <u>***Technologies***</u> ##
+● HTML.<br>
+● CSS, Méthodologie BEM.<br>
+● Pré-processeur Sass, pas de JavaScript.<br>
+● Structuration Sass avec le système d'architecture 7-1.<br>
+● NPM (Node Package Manager) pour la gestion des dépendances et l'automatisation des tâches de développement.<br>
+● Code versionné sur GitHub avec l'extension Gitflow.<br>
 
 
+## <u>***Gestion des Dépendances***</u> ##
+Ce projet utilise ***NPM (Node Package Manager)*** pour gérer ses dépendances.<br>
+Node.js est nécéssaire pour exécuter NPM. <br>
+Assurez-vous d'avoir Node.js installé localement pour travaillez avec ce projet.
+
+## <u> ***Script de construction*** </u> ##
+Ce projet utilise des scripts de construction pour gérer les fichiers SCSS et générer le CSS.<br>
+<u> Voici comment les utiliser : </u>
+
+- **dev** : Utilisez ce script pendant le développement. Il surveille les modifications dans le fichier <u>'main.scss'</u> et compile automatiquement le SCSS en CSS chaque fois qu'une modification est détecter.<br>
+Pour lancer le mode développement, exécutez :
+>npm run dev
+
+- **build** : Utilisez ce script pour générer une version finale et optimisée du CSS pour la production ou le déploiement.<br>
+Il ne surveille pas les modifications en temps réel.<br>
+Pour générer la version de production, éxécutez :
+
+> npm run build
+
+Assurez-vous d'avoir Node.js et NPM installés localement pour éxécuter ces scripts.
+
+
+## <u> ***Accès au site*** </u> ##
+
+Le site est accessible sur GitHubPages via cette adresse ci-dessous :<br>
+> ***https://buens18k.github.io/Projet4_animation-CSS/***
