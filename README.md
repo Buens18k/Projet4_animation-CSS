@@ -1,4 +1,8 @@
 # ***<u> " OhMyFood - Paris" </u>***
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ## ***<u> Formation OpenClassRoom</u> " Intégrateur Web "***.   
 ### <u> Projet 4 :</u> ***" Améliorez l'interface d'un site mobile avec des animations CSS".*** 
 > ***<u>Scénario :</u>***<br> Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
@@ -23,7 +27,7 @@ On veut aussi des animations soignées. Il faudra que tu m’expliques comment e
 Hâte de voir le site terminé !<br>
 Bon courage !<br>
 Paul<br>
-Pièce jointe :
+<u>Pièce jointe</u>:
 [<u>Maquettes mobile et desktop du site Ohmyfood </u>](https://www.figma.com/file/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=0%3A1&mode=dev)
 [<u>Prototype du site</u>](https://www.figma.com/proto/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-591&scaling=scale-down&page-id=0%3A1&starting-point-node-id=25368%3A591&show-proto-sidebar=1) 
 [<u>Fichiers sources (images et textes)</u>](https://drive.google.com/file/d/123vPuBPEAYODupm-42PjYmLwb4N0kyaL/view?usp=sharing)<br>
