@@ -1,5 +1,13 @@
-# ***<u> " OhMyFood " </u>***
-## ***<u> Formation OpenClassRoom</u> " Intégrateur Web "***.   
+# ***<u> " OhMyFood - Paris" </u>***
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## <u>***Formation*** </u> : ![OpenClassrooms - Intégrateur web](https://img.shields.io/badge/OpenClassrooms-Intégrateur%20web-blue?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABG0lEQVRYR+2Xv0oDQRCFv4sQIYQgBCKEIAQigpAQIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCKEIAQihCAEIvz/3tnd3Z3d3Z3d3Z3d3Z3d3Z3d3Z3d3Z3d3Z1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1f9f8D/AL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL+AP4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/Af4C/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwD/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP7P/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwO5r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D91j/E91j/E91j/E91j/E91j/E)   
 ### <u> Projet 4 :</u> ***" Améliorez l'interface d'un site mobile avec des animations CSS".*** 
 > ***<u>Scénario :</u>***<br> Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
 
@@ -11,13 +19,19 @@ L’équipe commerciale a déjà réussi à convaincre ***4 restaurateurs*** d�
 Le projet va pouvoir commencer. Paul vous envoie les maquettes par e-mail :<br> <pre>Objet : Maquettes site OhMyFood Paris   
 De : Paul   
 À : moi <br>
-Bonjour !<br>L’UX designer a finalisé les maquettes mobile et desktop du site ! Tu les trouveras en pièce jointe, en plus du dossier des sources du site (images et textes). Tu y trouveras également le prototype du site via Figma, incluant les animations et comportements à intégrer. Voici un extrait de ce à quoi devra ressembler le site :<br>
+Bonjour !<br>
+L’UX designer a finalisé les maquettes mobile et desktop du site !<br>
+Tu les trouveras en pièce jointe, en plus du dossier des sources du site (images et textes).<br>
+Tu y trouveras également le prototype du site via Figma, incluant les animations et comportements à intégrer.<br>
+Voici un extrait de ce à quoi devra ressembler le site :<br>
 ![](https://lh3.googleusercontent.com/pw/AIL4fc8o6ixwf3N0uZ8F0sUhKiDLKzd7Kl4b9nSco42MdEj87bUlmR5gwDBC1tw3_LypnesJm9sCQ6yf9731Fxi0Ov9UtvETlmIxk2rS0rHBLOoheXULMkuhSzhPBdU8GRxn77TdaXBCffcLyGuIpdLmILdNwYqjqJfe4jncJJnUzmeQrY8bH5BY-jGbDpWqcUOwoMd8f2tFYwEk2f_262fgMURCdA8zm6ERLuOIM6xcHA0TtWI2imRKxbIrt2QgMBEGDUvA4R1X9p4dO6OW4hoSlxdaVYdkeEftSUaIIYyJxkKw8w_GeZWPkkZJjLtDt4Y7s_WnMIfGpy4QK5opQ65oFbdV4yVIp6Lur91Zv8zDpHZhA2R8HqGngPF81jlIklksBqO1RYHzWnyfXhEFZFExvmChfyxalsoR6a6GGULyfIOTUtkbOUW0CfUvcMlHBTDUZYhV3BIp7BazKD-oZqz-T_1WHp7onZdNbNX2OW7F2dUcNo0oBGXklSgmJ9ThBfVe-8LEPxkuL4IEnAGQYFdcJAFSc7HTOz7vN5SfY4aE28cHTYlT8ylua3nNFFgBmuqCySRa2lYl22V--0kfRxopd81StwJyk6Yax2bQrw-Wr1yAVFCaxDTP-zr-AKt3sIbKTOxKbB3P2rStp6s0s-PxWpd3YEZ2flLY40WDbSj0QqDiKZLBnImYBn5_mBW3gh4a8gMA7IK4r4x8sKV1ynboXVQADh2DNTuNITdGtd7n1ZX1JiR_ezLVy9Jh2bSEJOnx36Nsh5t1B68fheutA6PdXmtsCi2_J_h5-Tn42gs6juQOxoFausp94nCrDx9_8CiSoB1ODpz3Txguk2lnnGpIKEjsjWsXirFW3mjy0OVhFovdzG4cSSv-GXpM_ZKDHib8OABvzLvTlTACfY6hvctYG3wewnFkFdQvf8jylPgdOhVH7M405dwkdXm-1VZ31j-sx5awEIqVno_r3B-ltYxU9-zIBvxfmg=w593-h287-s-no?authuser=0) <br>
-Il n’y a plus qu’à le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif ! Pour rappel, le site doit être responsive et en “mobile first”. On veut aussi des animations soignées. Il faudra que tu m’expliques comment elles fonctionnent.<br>
+Il n’y a plus qu’à le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif !<br>
+Pour rappel, le site doit être responsive et en “mobile first”.<br>
+On veut aussi des animations soignées. Il faudra que tu m’expliques comment elles fonctionnent.<br>
 Hâte de voir le site terminé !<br>
 Bon courage !<br>
 Paul<br>
-Pièce jointe :
+<u>Pièce jointe</u>:
 [<u>Maquettes mobile et desktop du site Ohmyfood </u>](https://www.figma.com/file/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=0%3A1&mode=dev)
 [<u>Prototype du site</u>](https://www.figma.com/proto/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-591&scaling=scale-down&page-id=0%3A1&starting-point-node-id=25368%3A591&show-proto-sidebar=1) 
 [<u>Fichiers sources (images et textes)</u>](https://drive.google.com/file/d/123vPuBPEAYODupm-42PjYmLwb4N0kyaL/view?usp=sharing)<br>
@@ -66,3 +80,11 @@ Assurez-vous d'avoir Node.js et NPM installés localement pour éxécuter ces sc
 
 Le site est accessible sur GitHubPages via cette adresse ci-dessous :<br>
 > ***https://buens18k.github.io/Projet4_animation-CSS/***
+
+## <u> ***Auteurs*** </u> ###
+
+- <u> ***Bruno VANG*** </u>- Codeur - 
+
+## <u> ***Contributeurs*** </u> ###
+
+- <u> ***Théo Etchanchu*** </u>- Mentor- 
