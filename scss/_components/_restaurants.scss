@@ -89,8 +89,13 @@
           padding: 7px;
           text-decoration: none;
           list-style: none;
-          background-color: $color-green;
           border-radius: 3px;
+        }
+
+        &--green {
+          span {
+            background-color: $color-green;
+          }
         }
       }
 
