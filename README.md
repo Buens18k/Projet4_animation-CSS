@@ -1,13 +1,8 @@
 # ***<u> " OhMyFood - Paris" </u>***
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Visual Studio Code][def] ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## <u>***Formation*** </u> : ![OpenClassrooms - Intégrateur web](https://img.shields.io/badge/OpenClassrooms-Intégrateur%20web-blue?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABG0lEQVRYR+2Xv0oDQRCFv4sQIYQgBCKEIAQigpAQIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCIEIYQgBCKEIAQihCAEIvz/3tnd3Z3d3Z3d3Z3d3Z3d3Z3d3Z3d3Z3d3Z1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1f9f8D/AL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL8A/gL+AP4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/AL4C/Af4C/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwB/AH+AvwD/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP4D/AP7P/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP9z/wP7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf7Tfwf6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwN6xvwO5r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A95r+A94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B94b+B93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C93v+C92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D92n/D91j/E91j/E91j/E91j/E91j/E)   
+# ![Formation](https://img.shields.io/badge/Formation%20-green?style=for-the-badge)  ![OpenClassrooms-IntégrateurWeb](https://img.shields.io/badge/OpenClassrooms%20-%20Int%C3%A9grateur%20Web%20-blue?style=for-the-badge)
+ 
 ### <u> Projet 4 :</u> ***" Améliorez l'interface d'un site mobile avec des animations CSS".*** 
 > ***<u>Scénario :</u>***<br> Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. 
 
@@ -88,3 +83,5 @@ Le site est accessible sur GitHubPages via cette adresse ci-dessous :<br>
 ## <u> ***Contributeurs*** </u> ###
 
 - <u> ***Théo Etchanchu*** </u>- Mentor- 
+
+[def]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
