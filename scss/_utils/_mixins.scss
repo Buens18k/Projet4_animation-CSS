@@ -15,6 +15,12 @@
   align-items: center;
 }
 
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 @mixin relative-center {
   position: relative;
   text-align: center;
