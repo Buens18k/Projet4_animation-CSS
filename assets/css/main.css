@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.main-menu__card__content__article__switch__valid, .header-home__location, .header-home__header__title, .header-home__header, .header-home, .main-home__hero__txt, .btn {
+.main-menu__card__content__article__switch__valid, .header-home__location, .header-home__header__title, .header-home__header, .main-home__hero__txt, .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,14 +35,6 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes animation-heart {
-  0% {
-    fill-opacity: 0;
-  }
-  100% {
-    fill-opacity: 1;
   }
 }
 * {
@@ -616,7 +608,7 @@ h4 {
 .main-home__restaurants__cards__card__txt__heart svg :hover,
 .main-home__restaurants__cards a__txt__heart svg :hover {
   fill-opacity: 1;
-  animation: animation-heart 1s 0s;
+  transition: fill-opacity 1s 0s;
 }
 .main-home__restaurants__cards__card__txt--black,
 .main-home__restaurants__cards__card__txt h3,
@@ -927,7 +919,7 @@ h4 {
 }
 .main-menu__card__title svg :hover {
   fill-opacity: 1;
-  animation: animation-heart 1s 0s;
+  transition: fill-opacity 1s 0s;
 }
 .main-menu__card__content {
   display: flex;

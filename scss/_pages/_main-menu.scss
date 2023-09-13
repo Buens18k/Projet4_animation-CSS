@@ -81,7 +81,8 @@
 
         :hover {
           fill-opacity: 1;
-          animation: animation-heart 1s 0s;
+          // Transition animation
+          transition: fill-opacity 1s 0s;
         }
       }
     }
@@ -122,17 +123,19 @@
         border-radius: 15.043px;
         background: $color-white;
         box-shadow: 0px 12.01149px 8.0431px 0px rgba(0, 0, 0, 0.1);
+        // Animation
         animation: slide-content 400ms ease-in-out;
 
         // appelle de la directive Sass '@each'
         // Parcours la liste 'numbers-articles' qui contient les éléments (numbers, delay)
         // et applique un style à chaque élément
         @each $numbers, $delay in $numbers-articles {
-          // appelle la mixins 
+          // appelle la mixins
           @include boucle-anime-articles($numbers, $delay);
         }
 
         &:hover &__switch__valid {
+          // Animation de reposition
           margin-right: 0;
         }
 
@@ -165,6 +168,7 @@
           display: flex;
           height: 100%;
           gap: 15px;
+          // cache le contenu qui déborde
           overflow: hidden;
 
           strong {
@@ -178,8 +182,10 @@
             background: $color-green;
             height: 100%;
             width: 5.3rem;
+            // position a l'extèrieur pour animation
             margin-right: -5.3rem;
             border-radius: 0px 15.043px 15.043px 0px;
+            // Transition d'animation
             transition: margin-right 600ms;
 
             i {
