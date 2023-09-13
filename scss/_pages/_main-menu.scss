@@ -123,8 +123,12 @@
         background: $color-white;
         box-shadow: 0px 12.01149px 8.0431px 0px rgba(0, 0, 0, 0.1);
         animation: slide-content 400ms ease-in-out;
-        // 
+
+        // appelle de la directive Sass '@each'
+        // Parcours la liste 'numbers-articles' qui contient les éléments (numbers, delay)
+        // et applique un style à chaque élément
         @each $numbers, $delay in $numbers-articles {
+          // appelle la mixins 
           @include boucle-anime-articles($numbers, $delay);
         }
 

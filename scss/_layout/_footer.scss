@@ -7,22 +7,14 @@
   gap: 16px;
   background: $color-grey;
 
-  @include tablet-only {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  @include desktop-only {
+    @include flex-end;
     height: 7.125rem;
     gap: 1rem;
   }
 
   &__cta {
     @include flex-column;
-
-    @include tablet-only {
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      gap: 4rem;
-    }
 
     @include desktop-only {
       justify-content: space-between;
@@ -33,10 +25,6 @@
     &__logo {
       display: flex;
 
-      @include tablet-only {
-        align-items: flex-end;
-      }
-
       @include desktop-only {
         align-items: flex-end;
       }
@@ -46,10 +34,6 @@
         flex-shrink: 0;
         filter: invert(50);
         padding: 3px 30px 5px 0px;
-
-        @include tablet-only {
-          padding-top: 0px;
-        }
 
         @include desktop-only {
           padding-top: 0px;
@@ -66,13 +50,6 @@
         align-items: flex-start;
         @extend %reset-padding-margin;
         gap: 0.44rem;
-
-        @include tablet-only {
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: flex-end;
-          gap: 1.44rem;
-        }
 
         @include desktop-only {
           flex-direction: row;
