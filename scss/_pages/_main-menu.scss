@@ -91,8 +91,10 @@
       @include flex-column;
       @include dimension-auto;
       gap: 12px;
-      animation: slide-content 1500ms ease-in-out;
       padding: 0% 3%;
+
+      // Animation
+      animation: slide-content 1500ms ease-in-out;
 
       h2 {
         @include style-h2-menu;
