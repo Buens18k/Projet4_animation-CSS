@@ -138,10 +138,11 @@
           svg {
             fill: url(#heart-gradient);
             fill-opacity: 0;
-
+            
             :hover {
               fill-opacity: 1;
-              animation: animation-heart 1s 0s;
+              // transition d'animation
+              transition: fill-opacity 1s 0s;
             }
           }
         }
